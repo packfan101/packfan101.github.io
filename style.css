@@ -7,7 +7,7 @@ body {
     font-family:'Lato', serif;
 }
 header {
-    background-color:forestgreen;
+    background-color:darkgreen;
     padding:5px;
     border-radius:10px;
     color:white;
@@ -31,7 +31,7 @@ h2 {
     border-bottom:solid thin;
 }
 footer {
-    background-color:forestgreen;
+    background-color:darkgreen;
     padding: 5px;
     margin-top:2em;
     border-radius:10px;
