@@ -1,0 +1,15 @@
+body {
+    max-width:900px;
+    margin:0 auto;
+}
+header {
+    background-color:forestgreen;
+    padding:10px;
+    border-radius:10px;
+
+}
+#aPortalPic {
+    float:right;
+    margin-top:-100px;
+    margin-right:15px;
+}
