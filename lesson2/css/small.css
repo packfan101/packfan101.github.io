@@ -5,6 +5,7 @@ body {
     margin:0 auto;
     font-family:'Cardo', serif;
     height:100%;
+    background-color:lightgoldenrodyellow;
 }
 
 header,footer {
@@ -47,6 +48,7 @@ div {
     border: 0.2em solid grey;
     margin:0em 0.2em 0.2em 0.2em;
     padding:0.2em;
+    background-color: white;
 }
 
 h3 {
