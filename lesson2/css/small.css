@@ -1,0 +1,64 @@
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width:800px;
+    margin:0 auto;
+    font-family:'Cardo', serif;
+    height:100%;
+}
+
+header,footer {
+    background-color:darkgreen;
+    padding:.3em;
+    line-height: 1;
+    border-radius:.67em;
+    color:white;
+    text-align:center;
+}
+
+footer {
+    margin-top: 1em;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Russo One', sans-serif;
+}
+h1 {
+    font-size: 2rem;
+    margin: 0.15rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+}
+
+section {
+    max-width: 25rem;
+    margin:0 auto;
+}
+
+section img {
+    max-width:100%;
+    margin-top:1em;
+}
+div {
+    border: 0.2em solid grey;
+    margin:0em 0.2em 0.2em 0.2em;
+    padding:0.2em;
+}
+
+h3 {
+    background-color:grey;
+    padding:0.2em;
+    border-radius:.67em .67em 0 0;
+    margin: 0.15em;
+    margin-bottom:0;
+}
+
+footer a {
+    color:white;
+}
+
+
