@@ -1,7 +1,7 @@
 body {
   font-size: 18px;
   background-color: rgba(132, 236, 111, 0.6);
-  font-family:'Cardo', serif;
+  font-family:'Cardo', Georgia, serif;
 }
 
 img {
@@ -33,15 +33,14 @@ header h1 {
   }
 
 h1, h2, h3, h4 {
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Russo One', fantasy, sans-serif;
     font-weight:500;
 }
 
 .home-section {
   margin: 2em;
 }
-main section h2,
-h3 {
+.home-section h2, .home-section h3 {
   margin: 0;
 }
 header img {
@@ -78,6 +77,11 @@ footer a {
   margin-top: -1em;
   font-size: small;
   color: rgba(132, 236, 111, 1);
+}
+
+.bold {
+  font-weight:bold;
+  text-align:right;
 }
 
 /* Color-Scheme */
