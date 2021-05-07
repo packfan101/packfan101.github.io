@@ -1,7 +1,4 @@
 @media only screen and (min-width:50em) {
-    body {
-        font-size:1.5em;
-    }
     .persona-container {
         display:flex;
      }

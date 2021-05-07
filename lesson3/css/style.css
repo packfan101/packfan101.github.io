@@ -4,6 +4,14 @@ body {
   font-family:'Cardo', serif;
 }
 
+img {
+  max-width: 100%;
+}
+
+main {
+    padding: 0.5em;
+}
+
 header,
 main,
 nav,
@@ -36,8 +44,7 @@ main section h2,
 h3 {
   margin: 0;
 }
-img {
-  max-width: 100%;
+header img {
   margin: 1em;
 }
 
