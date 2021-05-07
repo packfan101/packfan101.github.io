@@ -1,0 +1,18 @@
+@media only screen and (min-width:50em) {
+    body {
+        font-size:1.5em;
+    }
+    .persona-container {
+        display:flex;
+     }
+    .persona {
+        flex: 1 1 50%;
+        margin:2em;
+    }
+    .color-container {
+        display:flex;
+    }
+    .color {
+        flex: 0 1 100%;
+    }
+ }
