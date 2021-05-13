@@ -55,7 +55,7 @@ section {
 }
 
 main div {
-    background-color: rgba(177, 237, 252, .5);
+    background-color: rgba(177, 237, 252, 1);
     border:solid .1em black;
     margin: .5em;
     padding-left:0.5em;
