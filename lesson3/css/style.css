@@ -68,6 +68,10 @@ nav a {
   text-decoration: none;
 }
 
+.active {
+  background-color:rgb(255, 210, 63);
+}
+
 footer {
   background-color: rgba(30, 17, 106, 1);
   padding: 0.3em;
