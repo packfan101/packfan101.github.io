@@ -42,7 +42,7 @@ const dayOfMonth = date.getDate();
 const year = date.getFullYear();
 const day = days[date.getDay()];
 const month = months[date.getMonth()];
-const currentDate = `${day}, ${dayOfMonth} ${month}, ${year}`;
+const currentDate = `${day}, ${dayOfMonth} ${month} ${year}`;
 
 document.querySelector('#currentYear').innerHTML = year;
 document.querySelector('#currentDate').innerHTML = currentDate;

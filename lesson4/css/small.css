@@ -18,6 +18,12 @@ footer {
 footer a {
     color: white;
 }
+
+footer p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
 h1, h2, h3, h4 {
     font-family: 'Russo One', fantasy, sans-serif;
     font-weight:400;
