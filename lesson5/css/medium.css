@@ -43,4 +43,16 @@
         margin:0 1em 1em 1em;
         clear: both;
     }
+
+    .contactdiv img {
+        display: inline-block;
+        width: 80%;
+        margin:0.5em;
+    }
+    .contactdiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
 }

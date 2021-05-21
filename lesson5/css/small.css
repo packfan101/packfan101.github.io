@@ -41,10 +41,14 @@ h1, h2, h3, h4 {
     font-weight:400;
 }
 
-header, .contactdiv {
+header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contactdiv {
+    display: block;
 }
 
 header img {
@@ -53,8 +57,9 @@ header img {
 }
 
 .contactdiv img {
+    display: block;
     width: 80%;
-    margin:0.5em;
+    margin:0 auto;
 }
 
 .social {
