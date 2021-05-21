@@ -46,3 +46,9 @@ const currentDate = `${day}, ${dayOfMonth} ${month} ${year}`;
 
 document.querySelector('#currentYear').innerHTML = year;
 document.querySelector('#currentDate').innerHTML = currentDate;
+
+
+
+    if (day == 'Friday') {
+        document.querySelector('.banner').style.display = 'Block'; 
+    }
