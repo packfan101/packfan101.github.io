@@ -15,8 +15,12 @@ footer {
     padding: 0.5em;
 }
 
-footer a {
+.whitelinks {
     color: white;
+}
+
+.whitelinks:hover {
+    color:rgba(255, 210, 63, 1)
 }
 
 footer p {
@@ -29,7 +33,7 @@ h1, h2, h3, h4 {
     font-weight:400;
 }
 
-header {
+header, .contactdiv {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +42,23 @@ header {
 header img {
     width: 5em;
     margin: 0.5em 0.5em 0.5em 0em;
+}
+
+.contactdiv img {
+    width: 80%;
+    margin:0.5em;
+}
+
+.social {
+    font-size: 1.2em;
+}
+
+.image {
+    max-width: 100%;
+}
+
+.externalimage {
+    width: 100%;
 }
 
 header, footer {
@@ -53,20 +74,114 @@ header div {
     font-style: italic;
 }
 
-section {
+header section {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     font-size: 0.5em;
 }
 
-main div {
-    color: white;
-    background-color: rgba(30, 17, 106, 1);
-    border:solid .1em black;
+.italic {
+    color:white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.forecastdiv, .newsdiv {
     margin: .5em;
+    border:solid .1em black;
+}
+
+.forecastdiv, .newsdiv, .contactdiv {
+    color: white;
+    background-color: rgba(30, 17, 106, .7);
     padding-left:0.5em;
     text-align:left;
+}
+
+.contactdiv {
+    margin: .5em .5em 0 .5em;
+}
+
+.herodiv {
+    position: relative;
+    margin: .5em;
+    
+}
+
+.weathersummary {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: .5em;
+    width: 13em;
+    border:.1em solid grey;
+    border-radius: 1em;
+    box-shadow: 0 0 2em .2em grey;
+    background-color:rgba(241, 80, 37, 0.7);
+    white-space: nowrap;
+}
+
+.weathsumhead {
+    grid-column: 1 / span 2;
+    margin-bottom: 0.2em;
+    border-bottom: .1em solid black;
+    margin: .5em;
+}
+
+.weathsumleft {
+    grid-column: 1;
+    list-style: none;
+    text-align: right;
+    justify-self: end;
+    padding-left: .25em;
+    margin-top: 0;
+    font-weight:900;
+}
+
+.weathsumright {
+    grid-column: 2;
+    list-style: none;
+    text-align: left;
+    justify-self: start;
+    padding-left: .25em;
+    margin-top: 0;
+    font-weight: 900;
+    color:rgba(255, 210, 63, .9);
+    
+}
+
+.forecast {
+    display: none;
+}
+
+.forecastdiv {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: 5em;
+}
+
+.day {
+    background-color:rgba(30, 17, 106, 1);
+}
+
+.day, .temp {
+    padding: .25em;
+    text-align: center;
+    font-weight: 900;
+}
+
+.temp {
+    color: black;
+}
+.weathericon {
+    display: block;
+    width: 3em;
+    margin: 0 auto;
+    padding:.5em;
 }
 
 /* Nav Section */
@@ -75,7 +190,8 @@ nav ul {
     background-color:rgba(241, 80, 37, 1);
     list-style-type:none;
     margin: 0;
-    padding: 0;  
+    padding: 0; 
+    white-space: nowrap; 
 }
 
 nav li {
@@ -88,6 +204,10 @@ nav li {
 nav a {
     color: black;
     text-decoration: none;
+}
+
+nav a:hover {
+    color: rgba(241, 80, 37, 1);
 }
 
 nav li:hover {

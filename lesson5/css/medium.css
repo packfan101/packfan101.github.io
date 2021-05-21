@@ -3,7 +3,7 @@
         width: 8em;
     }
 
-    section {
+    header section {
         font-size: .8em;
     }
 
@@ -24,5 +24,22 @@
 
     footer p {
         font-size: 1em;
+    }
+
+    .weathersummary {
+        font-size: .8em;
+        width: 14em;
+    }
+
+    .forecast {
+        display: flex;
+        justify-content:center;
+    }
+
+    .externalimage {
+        width: 50%;
+        float: left;
+        margin:0 1em 1em 1em;
+        clear: both;
     }
 }
