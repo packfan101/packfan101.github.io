@@ -127,7 +127,7 @@ header section {
     left: 10px;
     display:grid;
     grid-template-columns: 1fr 1fr;
-    font-size: .5em;
+    font-size: .6em;
     width: 13em;
     border:.1em solid grey;
     border-radius: 1em;
