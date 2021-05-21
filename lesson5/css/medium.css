@@ -44,9 +44,10 @@
         clear: both;
     }
 
-    .contactdiv img {
+    .contactdiv iframe {
         display: inline-block;
-        width: 80%;
+        width: 40%;
+        height: 15em;
         margin:0.5em;
     }
     .contactdiv {
