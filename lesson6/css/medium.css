@@ -1,0 +1,58 @@
+@media only screen and (min-width: 34.7em) {
+    header picture img {
+        width: 8em;
+    }
+
+    header section {
+        font-size: .8em;
+    }
+
+    .ham {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        
+    }
+
+    nav ul li {
+        display: block;
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    .weathersummary {
+        font-size: .8em;
+        width: 14em;
+    }
+
+    .forecast {
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+
+    .externalimage {
+        width: 20%;
+        float: left;
+        margin:0 1em 1em 1em;
+        clear: both;
+    }
+
+    .contactdiv iframe {
+        width: 40%;
+        height: 15em;
+        margin:0.5em;
+    }
+    .contactdiv {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+}

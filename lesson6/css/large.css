@@ -1,0 +1,9 @@
+@media only screen and (min-width: 50em) {
+    header section {
+        font-size: 1em;
+    }
+    .weathersummary {
+        font-size: 1em;
+        width: 15em;
+    }
+}
