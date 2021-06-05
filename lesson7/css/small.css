@@ -265,8 +265,9 @@ nav li:hover {
 .galleryGrid {
     display: grid;
     grid-template-columns: 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
+    column-gap: 25px;
+    row-gap: 25px;
+    margin-bottom: 1em;
 }
 
 img[data-src] {
