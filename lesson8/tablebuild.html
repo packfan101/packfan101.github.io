@@ -7,10 +7,9 @@
     <title>SEIDCC Preston Home</title>
     <meta name="description" content="Southeast Idaho Community Connection Preston, ID">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cardo&family=Russo+One&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
         rel="stylesheet"
-    />
+        />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/tablebuild.css">
     <link rel="shortcut icon" href="../favicon.ico">
@@ -18,15 +17,19 @@
 </head>
 <body>
    <main>
-        <h2>Table Build Activity</h2>
+        <h1>Table Build Activity</h1>
         <table>
-            <thead>ACME Wildwest</thead>
-            <tbody>
+            <thead>
+                <tr>
+                    <th colspan="3">ACME Wildwest</th>
+                </tr> 
                 <tr>
                     <th>Period</th>
                     <th>Sales</th>
                     <th>Sales Goal</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>August</td>
                     <td>$3,590</td>
@@ -51,17 +54,20 @@
                     <td>Black Friday</td>
                     <td colspan="2">$3,200</td>
                 </tr>
+                <tr>
+                    <td>December</td>
+                    <td>$6,820</td>
+                    <td>$7,500</td>
+                </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Compiled 06.08.2021 by sJensen</td>
+                </tr>
+            </tfoot>
+            
         </table>
    </main>
-   <footer>
-        <p>
-            &copy; <span id="currentYear"></span> | Scott R. Jensen | Utah |
-            <a class="whitelinks" href="#" target="_blank">Terms of Use</a>
-        </p>
-        <p>
-            <span id="currentDate"></span> | <span><a class="whitelinks" href="../index.html">Assignment Portal</a></span>
-        </p>
-    </footer>     
+   
 </body>
 </html>
