@@ -1,0 +1,300 @@
+body {
+    font-size: 18px;
+    font-family: 'Cardo', Georgia, serif;
+    font-weight: 500;
+    background-color: rgba(177, 237, 252, .3);
+}
+
+.banner {
+    display: none;
+    background-color:rgba(255, 210, 63, 1);
+    text-align: center;
+    font-size: 1.2em;
+    font-weight:700;
+    padding: .5em;
+}
+main, footer {
+    max-width: 56em;
+    margin: 0 auto;
+    text-align:center;
+}
+
+footer {
+    padding: 0.5em;
+}
+
+.whitelinks {
+    color: white;
+}
+
+.whitelinks:hover {
+    color:rgba(255, 210, 63, 1)
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Russo One', fantasy, sans-serif;
+    font-weight:400;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactdiv {
+    display: block;
+}
+
+header img {
+    width: 5em;
+    margin: 0.5em 0.5em 0.5em 0em;
+}
+
+.contactdiv iframe {
+    display: block;
+    width: 80%;
+    height: 10em;
+    margin:0 auto;
+}
+
+.social {
+    font-size: 1.2em;
+}
+
+.image {
+    max-width: 100%;
+}
+
+.externalimage {
+    width: 100%;
+}
+
+header, footer {
+    background-color:rgba(30, 17, 106, 1);
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header div {
+    font-style: italic;
+}
+
+header section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 0.5em;
+}
+
+.italic {
+    color:white;
+    font-style: italic;
+}
+
+.forecastdiv, .newsdiv {
+    margin: .5em;
+    border:solid .1em black;
+}
+
+.forecastdiv, .newsdiv, .contactdiv {
+    color: white;
+    background-color: rgba(30, 17, 106, .8);
+    padding:0.5em;
+    text-align:left;
+}
+
+.contactdiv {
+    margin: .5em .5em 0 .5em;
+}
+
+.herodiv {
+    position: relative;
+    margin: .5em;
+    
+}
+
+.weathersummary {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: .6em;
+    width: 13em;
+    border:.1em solid grey;
+    border-radius: 1em;
+    box-shadow: 0 0 2em .2em grey;
+    background-color:rgba(241, 80, 37, 0.7);
+    white-space: nowrap;
+}
+
+.weathsumhead {
+    grid-column: 1 / span 2;
+    margin-bottom: 0.2em;
+    border-bottom: .1em solid black;
+    margin: .5em;
+}
+
+.weathsumleft {
+    grid-column: 1;
+    list-style: none;
+    text-align: right;
+    justify-self: end;
+    padding-left: .25em;
+    margin-top: 0;
+    font-weight:900;
+}
+
+.weathsumright {
+    grid-column: 2;
+    list-style: none;
+    text-align: left;
+    justify-self: start;
+    padding-left: .25em;
+    margin-top: 0;
+    font-weight: 900;
+    color:rgba(255, 210, 63, .9);
+    
+}
+
+.forecast {
+    display: none;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.forecastdiv {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: 5em;
+}
+
+.day {
+    background-color:rgba(30, 17, 106, 1);
+}
+
+.day, .temp {
+    padding: .25em;
+    text-align: center;
+    font-weight: 900;
+}
+
+.temp {
+    color: black;
+}
+.weathericon {
+    display: block;
+    width: 3em;
+    margin: 0 auto;
+    padding:.5em;
+}
+
+/* Nav Section */
+nav ul {
+    display: block;
+    background-color:rgba(241, 80, 37, 1);
+    list-style-type:none;
+    margin: 0;
+    padding: 0; 
+    white-space: nowrap; 
+}
+
+nav li {
+    display: none;
+    font-weight: 800;
+    padding: 0.5em;
+    
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgba(241, 80, 37, 1);
+}
+
+nav li:hover {
+    background-color:rgba(255, 210, 63, 1);
+}
+
+.active {
+    background-color:rgba(255, 210, 63, 1);
+}
+
+.ham {
+    display: block;
+}
+
+.open {
+    display:inline-block;
+}
+
+.fa-window-close {
+    display: none;
+}
+
+.close {
+    display:inline-block;
+}
+
+.hide {
+    display:none;
+}
+
+.responsive li {
+    display: block;
+}
+
+/* Gallery Page */
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+    margin-bottom: 1em;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+.gridimage {
+    filter: blur(0em);
+    transition: filter 2s;
+    border-radius: 1em 1em 0 0;
+    margin: 0;
+}
+
+.imagetile {
+    max-width: 400px;
+    border: 5px solid black;
+    border-radius: 1.3em;
+    border-color: rgb(150, 150, 150);
+    justify-self: center;
+    box-shadow:0px 0px 2px 2px rgb(90, 90, 90);
+}
+
+.imagecaption {
+    background-color: white;
+    margin: -.2em 0 0 0;
+    padding: 0.5em;
+    border-radius: 0 0 1em 1em;
+    max-width: 100%;
+    white-space: nowrap;
+}

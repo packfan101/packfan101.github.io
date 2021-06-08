@@ -1,0 +1,18 @@
+@media only screen and (min-width: 50em) {
+    header section {
+        font-size: 1em;
+    }
+    .weathersummary {
+        font-size: 1em;
+        width: 15em;
+    }
+    .galleryGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .imagetile:hover {
+        box-shadow: 2px 2px 7px 5px rgb(90, 90, 90);
+        transition: .5s;
+    }
+}
+
