@@ -298,3 +298,77 @@ img[data-src] {
     max-width: 100%;
     white-space: nowrap;
 }
+
+/* 
+*****************************
+* Storm Center Form Section *
+*****************************
+*/
+
+form {
+    background-color:rgba(30, 17, 106, .8);
+    color: white;
+    text-align: left;
+    padding: 1em;
+}
+
+form fieldset {
+    margin: 2em 0;
+}
+
+.custInfo, .stormInfo, .radio, .additionalInfo, .flexly {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label {
+    padding: 1em 0 1em 0;
+}
+
+.flexly .rating, .stormInfo, input.custinput, textarea {
+    width: 100%;
+}
+
+.radiolabel {
+    padding: 0.5em;
+}
+
+div.radio {
+    padding: 1.2em 0 1em 0;
+}
+
+.custinput, #submitBtn {
+    height: 50px;
+}
+
+select.custinput {
+    height: 60px;
+}
+
+.custinput, #submitBtn, textarea {
+    border: 5px solid gray;
+    border-radius: .8em;
+}
+
+#submitBtn {
+    background-color: green;
+    color: white;
+    Width: 505px;
+    max-width: 100%;
+}
+
+.thankYou {
+    padding: 1em;
+    font-size: 3em;
+    background-color:rgba(30, 17, 106, .8);
+    color: white;
+}
+
+.custinput:required {
+    border-left: 5px solid red;
+}
+
+.custinput:required:valid {
+    border-left: 5px solid green;
+}

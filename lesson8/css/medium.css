@@ -59,4 +59,10 @@
     .galleryGrid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .flexly .rating, select.custinput, input.custinput, textarea, #submitBtn {
+        width: 75%;
+    }
+
+
 }
