@@ -316,6 +316,11 @@ form fieldset {
     margin: 2em 0;
 }
 
+fieldset legend {
+    font-size: 1.2em;
+    font-family: 'Russo One', fantasy, sans-serif;
+}
+
 .custInfo, .stormInfo, .radio, .additionalInfo, .flexly {
     display: flex;
     flex-direction: column;
