@@ -64,16 +64,17 @@
                 <legend>Storm Information</legend>
                 <label class="stormInfo">Storm Date <input class="custinput" type="date"> </label>
                 <label class="stormInfo">Storm Type
-                    <select class="custinput" name="stormType">
-                        <option value="" disabled selected>Select Storm Type ...</option>
-                        <option value="flashFlood">Flash Flood</option>
-                        <option value="hail">Hail</option>
-                        <option value="hurricane">Hurricane</option>
-                        <option value="thunderstorm">Thunderstorm</option>
-                        <option value="tornado">Tornado</option>
-                        <option value="lightning">Lightning</option>
-                        <option value="blizzard">Blizzard</option>
-                    </select>
+                    <input list="weather" class="custinput" placeholder="Select Storm Type ...">
+                        
+                    <datalist id="weather">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                        <option value="Lightning"></option>
+                        <option value="Blizzard"></option>
+                    </datalist>
                 </label>
                 <label class="flexly" for="rating">Storm Severity &nbsp;&nbsp;&nbsp;
                         <input type="range" name="stormseverity" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
