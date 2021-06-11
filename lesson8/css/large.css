@@ -15,7 +15,7 @@
         transition: .5s;
     }
 
-    .flexly .rating, select.custinput, input.custinput, textarea, #submitBtn {
+    .flexly .rating, select.custinput, input.custinput, textarea, #submitBtn, #rating {
         width: 50%;
     }
 }

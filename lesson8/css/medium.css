@@ -60,7 +60,7 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .flexly .rating, select.custinput, input.custinput, textarea, #submitBtn {
+    .flexly .rating, select.custinput, input.custinput, textarea, #submitBtn, #rating {
         width: 75%;
     }
 

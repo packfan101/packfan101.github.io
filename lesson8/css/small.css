@@ -331,7 +331,7 @@ label {
     padding: 1em 0 1em 0;
 }
 
-.flexly .rating, .stormInfo {
+.flexly .rating, .stormInfo, #rating {
     width: 100%;
 }
 

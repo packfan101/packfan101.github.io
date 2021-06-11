@@ -62,7 +62,7 @@
                 <label class="custInfo">Full Name* <input class="custinput" type="text" name="fullname" pattern="[A-Za-z. -]{5,}" required> </label>
                 <label class="custInfo">Email <input class="custinput" type="email" name="email" placeholder="someone@gmail.com"> </label>
                 <label class="custInfo">Phone* <input class="custinput" type="tel" name="phone" pattern="[0-9]{10}" placeholder="1112223333" required> </label>
-                <label class="custInfo">Zip Code* <input class="custinput" type="number" name="zip" pattern="[0-9]{5}" placeholder="12345" required> </label>
+                <label class="custInfo">Zip Code* <input class="custinput" type="number" name="zip" placeholder="12345" required> </label>
             </fieldset>
             <fieldset class="storminfo">
                 <legend>Storm Information</legend>
@@ -80,12 +80,10 @@
                     </select>
                 </label>
                 <label class="flexly" for="rating">Storm Severity &nbsp;&nbsp;&nbsp;
-                    <div class="rating">
                         <input type="range" name="stormseverity" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
                         oninput="adjustRating(this.value)"
                         onchange="adjustRating(this.value)">
                         <span id="ratingvalue">5</span>
-                    </div>
                 </label>
                     <datalist id="tickmarks">
                         <option value="1"></option>
@@ -108,7 +106,7 @@
                     </select>    
                 </label>
                 <div class="radio">
-                    <caption class="">Are you in danger?</caption>     
+                    <p class="">Are you in danger?</p>     
                     <label class="radiolabel"><input type="radio" name="danger" value="yes">Yes</label> 
                     <label class="radiolabel"><input type="radio" name="danger" value="maybe">Maybe</label> 
                     <label class="radiolabel"><input type="radio" name="danger" value="no">No</label> 
