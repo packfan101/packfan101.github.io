@@ -326,8 +326,12 @@ label {
     padding: 1em 0 1em 0;
 }
 
-.flexly .rating, .stormInfo, input.custinput, textarea {
+.flexly .rating, .stormInfo {
     width: 100%;
+}
+
+input.custinput, textarea {
+    width: 96%;
 }
 
 .radiolabel {
