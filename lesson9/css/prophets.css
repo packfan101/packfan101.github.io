@@ -1,0 +1,87 @@
+body {
+    font-size: 18px;
+    font-family: 'Cardo', Georgia, serif;
+    font-weight: 500;
+    background-color: rgba(177, 237, 252, .3);
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: 'Russo One', fantasy, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 0.1em;
+}
+
+.cards {
+    margin: 0 auto;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 0 20px 5px grey;
+}
+
+section {
+    display: grid;
+    justify-items: center;
+    margin: .3em;
+    color: white;
+    background-color: rgba(30, 17, 106, .8);
+    padding: 1.5em 0;
+    border-radius: 1em;
+}
+
+section p {
+    margin: 0;
+}
+
+section:nth-child(17) :nth-child(4) {
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+img {
+    max-width: 60%;
+    box-shadow: 0 0 15px 2px black;
+    margin-top: 1.5em;
+}
+
+header, footer {
+    text-align: center;
+    margin: 1em;
+    font-size: 2em;
+    border-style: outset;
+    border-width: .2em;
+    border-color: darkgrey;
+    padding:0.1em;
+}
+
+@media only screen and (min-width: 35em) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        max-width: 90%;
+    }
+    section {
+        font-size: .78em;
+    }
+
+    h2 {
+        font-size: large;
+    }
+
+}
+
+@media only screen and (min-width: 60em) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+
+    section {
+        font-size: 0.75em;
+    }
+}
