@@ -82,7 +82,23 @@
         flex-direction: row-reverse;
     }
 
-    section.cards article:nth-child(1) .homeImage {
+    section.cards article:nth-child(1) .homeImage, .naturehike img {
         border-radius: .8em 0 0 .8em;
+    }
+
+    .communityad {
+        display: flex;
+        justify-content:space-between;
+        flex-direction:row-reverse;
+        font-size: .75em;
+    }
+
+    .advertisement {
+        width: 50%;
+    }
+
+    .naturehike {
+        margin: .2em 0 0 0;
+        max-width: 50%;
     }
 }

@@ -216,7 +216,7 @@ nav li {
     display: none;
     font-weight: 800;
     height: 2em;
-    
+    text-align: center;
 }
 
 nav a {
@@ -432,4 +432,22 @@ section.cards article h2, div.cards article h3 {
 section.cards article h3 {
     font-size: .8em;
     margin-top: 0;
+}
+
+.communityad {
+    background-color:rgba(30, 17, 106, .8);
+    color: white;
+    border: solid black 3px;
+    border-radius: 1em;
+    margin: .5em;
+}
+
+.naturehike {
+    padding: 0 .2em 0 .2em;
+}
+
+.naturehike img {
+    margin: 0 0 0 0;
+    max-width: 100%;
+    border-radius: 0 0 .8em .8em;
 }

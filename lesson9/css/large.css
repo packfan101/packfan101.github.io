@@ -44,5 +44,9 @@
     section.cards article:nth-child(1) .homeImage, .homeImage {
         border-radius: 0 0 .8em .8em;
     }
+    
+    .communityad {
+        font-size: 1em;
+    }
 }
 
