@@ -41,7 +41,7 @@ fetch(requestURL)
             rainfall.setAttribute('class', 'rainfall');
             image.setAttribute('class', 'homeImage');
             image.setAttribute('src', `images/${towns[i].photo}`);
-            image.setAttribute('alt', `${towns[i].name} town image`);
+            image.setAttribute('alt', `Mountain scenery near ${towns[i].name}`);
 
             document.querySelector('section.cards').appendChild(article);
         }
