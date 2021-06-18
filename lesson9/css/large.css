@@ -18,5 +18,31 @@
     .flexly .rating, select.custinput, input.custinput, textarea, #submitBtn, #rating {
         width: 50%;
     }
+
+    section.cards article {
+        flex-direction: column;
+    }
+
+    section.cards {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .homeImage {
+        max-width: 100%;
+    }
+
+    section.cards article div {
+        width: 100%;
+    }
+
+    section.cards article:nth-child(1) {
+        flex-direction: column;
+    }
+
+    section.cards article:nth-child(1) .homeImage, .homeImage {
+        border-radius: 0 0 .8em .8em;
+    }
 }
 
