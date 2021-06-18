@@ -14,6 +14,7 @@ h1, h2 {
 h1 {
     text-align: center;
     margin: 0.1em;
+    font-size: 0.8em;
 }
 
 .cards {
@@ -73,6 +74,8 @@ header, footer {
     h2 {
         font-size: large;
     }
+
+    h1 {font-size: 1em;}
 
 }
 
