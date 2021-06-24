@@ -1,5 +1,5 @@
 const citycode = document.querySelector('#citycode').textContent;
-const weatherURL = `http://api.openweathermap.org/data/2.5/weather?id=${citycode}&units=imperial&appid=a72098a69d05bfe82520977236405f51`;
+const weatherURL = `https://api.openweathermap.org/data/2.5/weather?id=${citycode}&units=imperial&appid=a72098a69d05bfe82520977236405f51`;
 fetch(weatherURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -13,7 +13,7 @@ fetch(weatherURL)
   });
 
 
-const forecastURL = `http://api.openweathermap.org/data/2.5/forecast?id=${citycode}&units=imperial&appid=a72098a69d05bfe82520977236405f51`;
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=${citycode}&units=imperial&appid=a72098a69d05bfe82520977236405f51`;
 fetch(forecastURL)
   .then((response) => response.json())
   .then((jsObject2) => {
