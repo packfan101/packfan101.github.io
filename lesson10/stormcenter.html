@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEIDCC Preston Home</title>
+    <meta
+      name="description"
+      content="Southeast Idaho Community Connection Preston, ID"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <script defer src="js/nav.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script defer src="js/webfontload.js"></script>
+    <script defer src="js/stormseverity.js"></script>
+     </head>
+  <body>
+    <header>
+      <figure>
+        <img src="images/Logosmall.png" alt="Mountain Home logo" />
+      </figure>
+      <section>
+        <h1>Southeast Idaho <br />Community Connection</h1>
+        <div class="flexwrap">The local news you want</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li class="ham">
+          <a href="#"
+            ><i class="fa fa-bars open"></i
+            ><i class="fa fa-window-close"></i> Menu</a
+          >
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston-10.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+        <h2>Report Storm Activity</h2>
+        <form action="thanks.html">
+            <fieldset class="custinfo">
+                <legend>Customer Information</legend>
+                <label class="custInfo">Full Name* <input class="custinput" type="text" name="fullname" pattern="[A-Za-z. -]{5,}" required> </label>
+                <label class="custInfo">Email <input class="custinput" type="email" name="email" placeholder="someone@gmail.com"> </label>
+                <label class="custInfo">Phone* <input class="custinput" type="tel" name="phone" pattern="[0-9]{10}" placeholder="1112223333" required> </label>
+                <label class="custInfo">Zip Code* <input class="custinput" type="number" name="zip" placeholder="12345" required> </label>
+            </fieldset>
+            <fieldset class="storminfo">
+                <legend>Storm Information</legend>
+                <label class="stormInfo">Storm Date <input class="custinput" type="date"> </label>
+                <label class="stormInfo">Storm Type
+                    <input list="weather" class="custinput" placeholder="Select Storm Type ...">
+                        
+                    <datalist id="weather">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                        <option value="Lightning"></option>
+                        <option value="Blizzard"></option>
+                    </datalist>
+                </label>
+                <label class="flexly" for="rating">Storm Severity &nbsp;&nbsp;&nbsp;
+                        <input type="range" name="stormseverity" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                        oninput="adjustRating(this.value)"
+                        onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                </label>
+                    <datalist id="tickmarks">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+                <label class="stormInfo">Storm Region
+                    <select class="custinput" name="stormRegion">
+                        <option value="" disabled selected>Select Region ...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSprings">Soda Springs</option>
+                        <option value="fishHaven">Fish Haven</option>
+                    </select>    
+                </label>
+                <div class="radio">
+                    <p class="">Are you in danger?</p>     
+                    <label class="radiolabel"><input type="radio" name="danger" value="yes">Yes</label> 
+                    <label class="radiolabel"><input type="radio" name="danger" value="maybe">Maybe</label> 
+                    <label class="radiolabel"><input type="radio" name="danger" value="no">No</label> 
+                </div>
+            </fieldset>
+            <fieldset class="addinfo">
+                <legend>Additional Information</legend>
+                <label class="additionalInfo">Please insert any additional comments <br>
+                    that others may find helpful. 
+                    <textarea name="comments" cols="30" rows="10"></textarea> </label>
+            </fieldset>
+            <input id="submitBtn" type="submit" value="Send Storm Information">
+        </form>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> | Scott R. Jensen | Utah |
+        <a class="whitelinks" href="#" target="_blank">Terms of Use</a>
+      </p>
+      <p>
+        <span id="currentDate"></span> |
+        <span
+          ><a class="whitelinks" href="../index.html"
+            >Assignment Portal</a
+          ></span
+        >
+      </p>
+    </footer>
+  </body>
+</html>
