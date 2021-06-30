@@ -183,9 +183,7 @@ header section {
 }
 
 .forecast {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: none;
 }
 
 .break {

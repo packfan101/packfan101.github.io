@@ -30,6 +30,12 @@
         width: 15em;
     }
 
+    .forecast {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .externalimage {
         width: 20%;
         float: left;
