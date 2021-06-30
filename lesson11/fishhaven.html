@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEIDCC Fish Haven Home</title>
+    <meta name="description" content="Southeast Idaho Community Connection Fish Haven, ID">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo&family=Russo+One&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <script defer src="js/weatherSummary.js"></script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script defer src="js/webfontload.js"></script>
+    <script defer src="js/windchill.js"></script>
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="images/Logosmall.png" alt="Mountain Home logo">
+        </picture>
+        <section>
+            <h1>Southeast Idaho <br>Community Connection</h1>
+            <div class="flexwrap">The local news you want</div>
+        </section>
+   </header>
+   <nav>
+       <ul class="navigation">
+        <li class="ham"><a href="#"><img src="images/icons/hamburgermenu.png" alt="menu icon" class="fa-bars icon"><img src="images/icons/closeicon.png" alt="close menu icon" class="fa-window-close icon"> Menu</a></li>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="preston.html">Preston</a></li>
+           <li><a href="sodasprings.html">Soda Springs</a></li>
+           <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+           <li><a href="stormcenter.html">Storm Center</a></li>
+           <li><a href="gallery.html">Gallery</a></li>
+       </ul>
+   </nav>
+   <main>
+    <h2>Fish Haven Idaho</h2>
+    <div class="herodiv">
+        <picture>
+            <source media="(min-width: 801px)" srcset="images/fishhavenhero1100.jpg">
+            <source media="(min-width: 556px)" srcset="images/fishhavenhero800.jpg">
+            <img class = 'image' src="images/fishhavenhero560.jpg" alt="Bear Lake outside of Fish Haven">
+        </picture>
+        <section class="weathersummary">
+            <h3 class="weathsumhead">Weather Summary</h3>
+            <p id='lat'>42.03723</p>
+            <p id='lon'>-111.39598</p>
+            <ul class="weathsumleft">
+                <li>Currently:</li>
+                <li>Current Temp:</li>
+                <li>High:</li>
+                <li>Wind Chill:</li>
+                <li>Humidity:</li>
+                <li>Wind Speed:</li>
+            </ul>
+            <ul class="weathsumright">
+                <li><span id="currentcondition"></span> &nbsp;</li>
+                <li><span id="currenttemp"></span> &#8457;</li>
+                <li><span id="hightemp"></span> &#8457;</li>
+                <li><span id="windchill"></span> &#8457;</li>
+                <li><span id="humidity"></span> &nbsp;</li>
+                <li><span id="windspeed"></span> mph</li>
+            </ul>
+        </section>
+    </div>
+    <section class="forecast">
+        <h2 class="forecasthead">5 Day Forecast</h2>
+        <div class="break"></div>
+        <div class="forecastdiv">
+            <div class = "day" id="day1"></div>
+            <div class="forecastimg"><img class = 'weathericon' id = 'weathericon1' src="#" alt="#"></div>
+            <div class="temp"><span id="temp1"></span> &#8457;</div>
+        </div>
+        <div class="forecastdiv">
+            <div class = "day" id="day2"></div>
+            <div class="forecastimg"><img class = 'weathericon' id = 'weathericon2' src="#" alt="#"></div>
+            <div class="temp"><span id="temp2"></span> &#8457;</div>
+        </div>
+        <div class="forecastdiv">
+            <div class = "day" id="day3"></div>
+            <div class="forecastimg"><img class = 'weathericon' id = 'weathericon3' src="#" alt="#"></div>
+            <div class="temp"><span id="temp3"></span> &#8457;</div>
+        </div>
+        <div class="forecastdiv">
+            <div class = "day" id="day4"></div>
+            <div class="forecastimg"><img class = 'weathericon' id = 'weathericon4' src="#" alt="#"></div>
+            <div class="temp"><span id="temp4"></span> &#8457;</div>
+        </div>
+        <div class="forecastdiv">
+            <div class = "day" id="day5"></div>
+            <div class="forecastimg"><img class = 'weathericon' id = 'weathericon5' src="#" alt="#"></div>
+            <div class="temp"><span id="temp5"></span> &#8457;</div>
+        </div>
+    </section>
+    <div class="newsdiv">
+        <h3>Fish Haven Canyon Road and Hogs Back Trail to Close for Repairs</h3>
+        <h4 class="italic"> by USFS</h4>
+        <p>BEAR LAKE, ID – June 15, 2021 – The popular Fish Haven Canyon Road (NFSR 413) and Hogs Back Trail adjacent to Bear Lake, which accesses portions of Forest in the Montpelier Ranger District, will close for repairs beginning June 21. The road and trail will close while heavy equipment is on the road, we ask you to be respectful of the staged equipment.
+            Road Closed | June 21 — June 28         
+            Road Open | June 29 — July 5
+            Road Closed | July 6-12
+            Anticipated re-opening is July 13. Delays may be possible the week of June 14 as road crews restore areas impacted by illegal travel and prepare for the mobile rock crusher. 
+            “Fish Haven Road has deteriorated substantially over the last few years,” said Mike Duncan, Montpelier District Ranger. “Natural erosion and inappropriate use by vehicles, including ATV’s and motorcycles have torn the road down to its bedrock layer.” When vehicles travel at excessive speeds, fish tail in the gravel, fail to use 4-wheel drive when appropriate and spin tires, etc. , it removes the gravel and increases erosion and results in resource damage.
+            The Forest was notified several weeks ago that it was on the regional rock crusher equipment schedule. This unique piece of equipment services all the Forest’s within Region Four and is in high demand. The rock crusher slowly moves over the bedrock layer and pulverizes the underlying material into a maintainable road surface material. It also smooths over larger boulders and rock outcroppings, allowing operators to widen narrow roads. Once the crusher completes it work, additional heavy equipment will proceed to smooth out the material, clean up the area and improve water drainage.
+            This kind of heavy maintenance is time intensive. “We expect to have the road closed for 2-3 weeks while we undertake this laborious process,” said Duncan. “However, the final product should be one that improves access to the forest. We just urge people to be good stewards and take care of it in the future so we don’t see the damage continue and we can protect your public land investment.”
+            Once the six miles of road is resurfaced, individuals are urged to be respectful and Tread Lightly. Roosting around corners, driving too fast and spinning tires quickly ruins the road and the experience for others.
+            For more information contact the Montpelier Ranger District at 208-847-0375.   <a class="whitelinks" href="https://www.hjnews.com/montpelier/fish-haven-canyon-road-and-hogs-back-trail-to-close-for-repairs/article_f534dfb2-3b7a-5e0f-bd58-165aafc50748.html">Find the full news article here</a></p>
+    </div>
+    <div class="contactdiv">
+        <section>
+            <h4>Southeast Idaho Community Connection</h4>
+            <p><img class="icon" src="images/icons/locationicon.png" alt="map marker icon"> 30 N 1st E <br>
+            Preston, ID 83263</p>
+            <p><img class="icon" src="images/icons/phoneicon.png" alt="phone icon"> 999.999.9999 <br>✉ communityconnection@seidcc.com</p>
+            <div class="social"><a class="whitelinks" href="http://www.facebook.com" target="_blank"><img class="socialicon" src="images/icons/facebookicon.png" alt="white facebook icon"></a> <a class="whitelinks" href="http://www.pinterest.com" target="_blank"><img class="socialicon" src="images/icons/pinteresticon.png" alt="white pinterest icon"></a> <a class="whitelinks" href="http://www.twitter.com" target="_blank"><img class="socialicon" src="images/icons/twittericon.png" alt="white twitter icon"></a> <a class="whitelinks" href="http://www.whatsapp.com" target="_blank"><img class="socialicon" src="images/icons/whatsappicon.png" alt="white whatsapp icon"> </a></div>
+        </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39034.64602031366!2d-111.44655491594489!3d42.05239095209473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287!5e1!3m2!1sen!2sus!4v1625085775538!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+   </main>
+   <footer>
+        <p>
+            &copy; <span id="currentYear"></span> | Scott R. Jensen | Utah |
+            <a class="whitelinks" href="#" target="_blank">Terms of Use</a>
+        </p>
+        <p>
+            <span id="currentDate"></span> | <span><a class="whitelinks" href="../index.html">Assignment Portal</a></span>
+        </p>
+    </footer>     
+</body>
+</html>

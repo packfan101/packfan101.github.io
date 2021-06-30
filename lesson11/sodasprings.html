@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEIDCC Soda Springs Home</title>
+    <meta name="description" content="Southeast Idaho Community Connection Soda Springs, ID">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo&family=Russo+One&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <script defer src="js/weatherSummary.js"></script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script defer src="js/webfontload.js"></script>
+    <script defer src="js/windchill.js"></script>
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="images/Logosmall.png" alt="Mountain Home logo">
+        </picture>
+        <section>
+            <h1>Southeast Idaho <br>Community Connection</h1>
+            <div class="flexwrap">The local news you want</div>
+        </section>
+   </header>
+   <nav>
+       <ul class="navigation">
+        <li class="ham"><a href="#"><img src="images/icons/hamburgermenu.png" alt="menu icon" class="fa-bars icon"><img src="images/icons/closeicon.png" alt="close menu icon" class="fa-window-close icon"> Menu</a></li>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="preston.html">Preston</a></li>
+           <li class="active"><a href="sodasprings.html">Soda Springs</a></li>
+           <li><a href="fishhaven.html">Fish Haven</a></li>
+           <li><a href="stormcenter.html">Storm Center</a></li>
+           <li><a href="gallery.html">Gallery</a></li>
+       </ul>
+   </nav>
+   <main>
+    <h2>Soda Springs Idaho</h2>
+    <div class="herodiv">
+        <picture>
+            <source media="(min-width: 801px)" srcset="images/sodaspringshero1100.jpg">
+            <source media="(min-width: 556px)" srcset="images/sodaspringshero800.jpg">
+            <img class = 'image' src="images/sodaspringshero560.jpg" alt="Lake near Soda Springs">
+        </picture>
+        <section class="weathersummary">
+            <h3 class="weathsumhead">Weather Summary</h3>
+            <p id='lat'>42.654369</p>
+            <p id='lon'>-111.604668</p>
+            <ul class="weathsumleft">
+                <li>Currently:</li>
+                <li>Current Temp:</li>
+                <li>High:</li>
+                <li>Wind Chill:</li>
+                <li>Humidity:</li>
+                <li>Wind Speed:</li>
+            </ul>
+            <ul class="weathsumright">
+                <li><span id="currentcondition"></span> &nbsp;</li>
+                <li><span id="currenttemp"></span> &#8457;</li>
+                <li><span id="hightemp"></span> &#8457;</li>
+                <li><span id="windchill"></span> &#8457;</li>
+                <li><span id="humidity"></span> &nbsp;</li>
+                <li><span id="windspeed"></span> mph</li>
+            </ul>
+        </section>
+    </div>
+    <section class="forecast">
+        <h2 class="forecasthead">5 Day Forecast</h2>
+        <div class="break"></div>
+        <div class="forecastdiv">
+            <div class = "day" id="day1"></div>
+            <div class="forecastimg"><img class = 'weathericon' id = 'weathericon1' src="#" alt="#"></div>
+            <div class="temp"><span id="temp1"></span> &#8457;</div>
+        </div>
+        <div class="forecastdiv">
+            <div class = "day" id="day2"></div>
+            <div class="forecastimg"><img class = 'weathericon' id = 'weathericon2' src="#" alt="#"></div>
+            <div class="temp"><span id="temp2"></span> &#8457;</div>
+        </div>
+        <div class="forecastdiv">
+            <div class = "day" id="day3"></div>
+            <div class="forecastimg"><img class = 'weathericon' id = 'weathericon3' src="#" alt="#"></div>
+            <div class="temp"><span id="temp3"></span> &#8457;</div>
+        </div>
+        <div class="forecastdiv">
+            <div class = "day" id="day4"></div>
+            <div class="forecastimg"><img class = 'weathericon' id = 'weathericon4' src="#" alt="#"></div>
+            <div class="temp"><span id="temp4"></span> &#8457;</div>
+        </div>
+        <div class="forecastdiv">
+            <div class = "day" id="day5"></div>
+            <div class="forecastimg"><img class = 'weathericon' id = 'weathericon5' src="#" alt="#"></div>
+            <div class="temp"><span id="temp5"></span> &#8457;</div>
+        </div>
+    </section>
+    <div class="newsdiv">
+        <h3>Fatal motorcycle crash near Soda Springs</h3>
+        <h4 class="italic"> by mylocalradio.com</h4>
+        <img class="externalimage" src="https://mylocalradio.com/wp-content/uploads/2020/08/Response-to-fatal-motorcycle-crash-Soda-Springs-8-3-20.png" alt="picture of life flight helicopter at scene of accident">
+        <p>SODA SPRINGS, Idaho   –   A motorcyclist is dead following a crash near Soda Springs. At approximately 3:14 p.m. Monday afternoon the Caribou County Sheriff’s Office responded to Hwy 34 near mile post 84 for the report of a one vehicle motorcycle accident.
+
+            The Sheriff’s Office, Caribou County EMS, and Portneuf Air Med was dispatch to the scene.
+            
+            The rider was taken to Portneuf Medical Center by helicopter, where he succumbed to his injuries.
+            
+            The cause of the accident is still under investigation.   <a class="whitelinks" href="https://mylocalradio.com/fatal-motorcycle-crash-near-soda-springs/">Find the full news article here</a></p>
+    </div>
+    <div class="contactdiv">
+        <section>
+            <h4>Southeast Idaho Community Connection</h4>
+            <p><img class="icon" src="images/icons/locationicon.png" alt="map marker icon"> 30 N 1st E <br>
+            Preston, ID 83263</p>
+            <p><img class="icon" src="images/icons/phoneicon.png" alt="phone icon"> 999.999.9999 <br>✉ communityconnection@seidcc.com</p>
+            <div class="social"><a class="whitelinks" href="http://www.facebook.com" target="_blank"><img class="socialicon" src="images/icons/facebookicon.png" alt="white facebook icon"></a> <a class="whitelinks" href="http://www.pinterest.com" target="_blank"><img class="socialicon" src="images/icons/pinteresticon.png" alt="white pinterest icon"></a> <a class="whitelinks" href="http://www.twitter.com" target="_blank"><img class="socialicon" src="images/icons/twittericon.png" alt="white twitter icon"></a> <a class="whitelinks" href="http://www.whatsapp.com" target="_blank"><img class="socialicon" src="images/icons/whatsappicon.png" alt="white whatsapp icon"> </a></div>
+        </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.960666127!2d-111.62387744331713!3d42.661407490596574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1625082518410!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+   </main>
+   <footer>
+        <p>
+            &copy; <span id="currentYear"></span> | Scott R. Jensen | Utah |
+            <a class="whitelinks" href="#" target="_blank">Terms of Use</a>
+        </p>
+        <p>
+            <span id="currentDate"></span> | <span><a class="whitelinks" href="../index.html">Assignment Portal</a></span>
+        </p>
+    </footer>     
+</body>
+</html>
