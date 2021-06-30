@@ -218,6 +218,10 @@ header section {
     padding:.5em;
 }
 
+#lat, #lon {
+    display: none;
+}
+
 /* Nav Section */
 nav ul {
     display: block;
@@ -418,9 +422,10 @@ section.cards {
     flex-direction: column;
 }
 
-section.cards article:nth-child(1) {order: 2;}
-section.cards article:nth-child(2) {order: 3;}
-section.cards article:nth-child(3) {order: 1;}
+
+section.cards article:nth-child(4) {order: 1;}
+section.cards article:nth-child(2) {order: 2;}
+section.cards article:nth-child(3) {order: 3;}
 
 section.cards article {
     display: flex;
@@ -468,6 +473,3 @@ section.cards article h3 {
     border-radius: 0 0 .8em .8em;
 }
 
-#lat, #lon {
-    display: none;
-}

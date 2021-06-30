@@ -78,11 +78,11 @@
         width: 50%;
     }
 
-    section.cards article:nth-child(1) {
+    section.cards article:nth-child(2) {
         flex-direction: row-reverse;
     }
 
-    section.cards article:nth-child(1) .homeImage, .naturehike img {
+    section.cards article:nth-child(2) .homeImage, .naturehike img {
         border-radius: .8em 0 0 .8em;
     }
 
