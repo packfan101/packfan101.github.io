@@ -5,7 +5,7 @@ fetch(weatherURL)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
-    document.querySelector('#currentcondition').textContent = jsObject.weather[0].main;
+    document.querySelector('#currentcondition').textContent = jsObject.weather[0].description;
     document.querySelector('#currenttemp').textContent = jsObject.main.temp.toFixed(0);
     document.querySelector('#hightemp').textContent = jsObject.main.temp_max.toFixed(0);
     document.querySelector('#humidity').textContent = `${jsObject.main.humidity}%`;
