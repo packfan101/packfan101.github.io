@@ -67,6 +67,14 @@ header img {
     font-size: 1.2em;
 }
 
+.icon {
+    width: .6em;
+}
+
+.socialicon {
+    width: 1.2em;
+}
+
 .image {
     max-width: 100%;
 }
@@ -110,6 +118,10 @@ header section {
     background-color: rgba(30, 17, 106, .8);
     padding:0.5em;
     text-align:left;
+}
+
+.forecastimg, .temp {
+    background-color: darkgray;
 }
 
 .contactdiv {
