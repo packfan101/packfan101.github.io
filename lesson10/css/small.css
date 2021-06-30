@@ -158,6 +158,7 @@ header section {
     margin-bottom: 0.2em;
     border-bottom: .1em solid black;
     margin: .5em;
+    max-width: 100%;
 }
 
 .weathsumleft {
@@ -172,6 +173,7 @@ header section {
 
 .weathsumright {
     grid-column: 2;
+    max-width: 100%;
     list-style: none;
     text-align: left;
     justify-self: start;
