@@ -57,10 +57,7 @@ header img {
 }
 
 .contactdiv iframe {
-    display: block;
-    width: 80%;
-    height: 10em;
-    margin:0 auto;
+    display: none;
 }
 
 .social {
@@ -79,7 +76,7 @@ header img {
     max-width: 100%;
 }
 
-.externalimage {
+.externalimage, .newsimage {
     width: 100%;
 }
 
@@ -109,11 +106,10 @@ header section {
 }
 
 .prestoneventsdiv, .sodaspringseventsdiv, .fishhaveneventsdiv {
-    width: 50%;
-    margin:1em auto;
+    margin:1em .5em;
     color: white;
     background-color: rgba(30, 17, 106, .8);
-    border: 4px solid black;
+    border: 5px solid grey;
     border-style: outset;
 }
 
@@ -230,6 +226,7 @@ header section {
 #lat, #lon {
     display: none;
 }
+
 
 /* Nav Section */
 nav ul {

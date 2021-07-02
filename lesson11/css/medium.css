@@ -43,7 +43,20 @@
         clear: both;
     }
 
+    .newsimage {
+        width: 50%;
+        float: left;
+        margin:0 1em 1em 1em;
+        clear: both;
+    }
+
+    .prestoneventsdiv, .sodaspringseventsdiv, .fishhaveneventsdiv {
+        width:26em;
+        margin:1em auto;
+    }
+
     .contactdiv iframe {
+        display:block;
         width: 40%;
         height: 15em;
         margin:0.5em;
