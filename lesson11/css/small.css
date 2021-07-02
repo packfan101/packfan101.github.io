@@ -108,6 +108,15 @@ header section {
     font-style: italic;
 }
 
+.prestoneventsdiv, .sodaspringseventsdiv, .fishhaveneventsdiv {
+    width: 50%;
+    margin:1em auto;
+    color: white;
+    background-color: rgba(30, 17, 106, .8);
+    border: 4px solid black;
+    border-style: outset;
+}
+
 .newsdiv {
     margin: .5em;
     border:solid .1em black;
