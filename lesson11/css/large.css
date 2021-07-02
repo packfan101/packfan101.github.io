@@ -2,6 +2,11 @@
     header section {
         font-size: 1em;
     }
+
+    .navigation {
+        max-width: 63rem;
+        margin: 0 auto;
+    }
     .weathersummary {
         font-size: 1em;
         width: 15em;

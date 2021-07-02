@@ -11,14 +11,13 @@
         display: none;
     }
 
-    nav ul {
+    .navigation {
         display: flex;
     }
 
     nav ul li {
         display: block;
         flex: 1 1 auto;
-        text-align: center;
     }
 
     footer p {

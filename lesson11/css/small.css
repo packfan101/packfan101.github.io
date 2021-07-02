@@ -225,9 +225,13 @@ header section {
 
 
 /* Nav Section */
+nav {
+    background-color:rgba(241, 80, 37, 1);
+}
+
 nav ul {
     display: block;
-    background-color:rgba(241, 80, 37, 1);
+
     list-style-type:none;
     margin: 0;
     padding: 0; 
