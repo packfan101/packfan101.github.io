@@ -6,7 +6,7 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        console.table(jsonObject);
+        //console.table(jsonObject);
         const towns = jsonObject['towns'];
 
         if (document.querySelector('.townname').textContent == 'Preston Idaho') {
