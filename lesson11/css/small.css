@@ -223,10 +223,6 @@ header section {
     padding:.5em;
 }
 
-#lat, #lon {
-    display: none;
-}
-
 
 /* Nav Section */
 nav ul {

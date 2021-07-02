@@ -1,5 +1,5 @@
-const lat = document.querySelector('#lat').textContent;
-const lon = document.querySelector('#lon').textContent;
+const lat = document.querySelector('.weathsumhead').dataset["lat"];
+const lon = document.querySelector('.weathsumhead').dataset["lon"];
 const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=a72098a69d05bfe82520977236405f51`;
 fetch(weatherURL)
   .then((response) => response.json())
