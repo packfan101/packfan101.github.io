@@ -80,7 +80,7 @@ footer {
 
 .persona {
   display: grid;
-  grid-template-columns: 1rf 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 #article1, #article2 {
