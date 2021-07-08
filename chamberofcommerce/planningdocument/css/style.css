@@ -1,0 +1,134 @@
+body {
+  font-size: 16px;
+  font-family: 'Roboto', Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, a {
+  font-family: 'Shippori Mincho', Georgia, serif;
+
+}
+
+header img {
+  max-width: 6em;
+}
+
+.center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header.flex {
+  justify-content: space-between;
+  padding: 0 1em 1em 1em;
+}
+
+ul.flex {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin: 1em 0 .5em 0;
+}
+
+section p {
+  margin: 0 0 1em 0;
+}
+
+section, footer {
+  background-color: rgb(19, 80, 133);
+  color: white;
+}
+
+section {
+  padding: 1em;
+}
+
+nav ul a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  color: rgb(48, 180, 76);
+}
+
+nav ul li.active a {
+  color: rgb(48, 180, 76);
+}
+
+ul li {
+  margin: 0.5em;
+  list-style-type: none;
+
+}
+
+footer {
+  margin: 1em 0 0 0;
+  text-align: center;
+  padding: .1em;
+}
+
+.persona {
+  display: grid;
+  grid-template-columns: 1rf 1fr;
+}
+
+#article1, #article2 {
+  margin: 1em;
+}
+#article1 {
+  grid-column: 1;
+}
+
+#article2 {
+  grid-column: 2;
+}
+
+.image {
+  max-width: 100%;
+}
+
+#sitemap {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  align-self: center;
+  box-shadow: 0px 0px 20px 5px black;
+}
+
+#color1, #color2, #color3, #color4 {
+  border: black solid 2px;
+  margin: .2em;
+  padding: .5em;
+  width: 80em;
+  min-height: 15em;
+}
+
+#color1 {
+  background-color: rgb(19, 80, 133);
+}
+
+#color2 {
+  background-color: rgb(48, 180, 76);
+  color: black;
+}
+
+#color3 {
+  background-color: rgb(237, 104, 60);
+  color: black;
+}
+
+#color4 {
+  background-color: rgb(255, 243, 59);
+  color: black;
+}
