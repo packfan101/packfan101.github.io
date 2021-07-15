@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>West Jordan Chamber</title>
+  <meta name="description" content="West Jordan Chamber of Commerce Home Page">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shippori+Mincho:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <script defer src="js/nav.js"></script>
+  <script defer src="js/weatherSummary.js"></script>
+</head>
+<body>
+  <div class="weatheralert"><span class="alert"></span></div>
+  <header class="flex">
+    <img src="images/logo.png" alt="chamber of commerce logo">
+    <nav>
+      <ul class="flex navigation">
+        <li class="ham"><a href="#"><img src="images/icons/hamburgermenu.png" alt="menu icon" class="menuicon"><img src="images/icons/closeicon.png" alt="close menu icon" class="closeicon"></a></li>
+        <li class="menu active"><a href="index.html">Home</a></li>
+        <li class="menu"><a href="city.html">City</a></li>
+        <li class="menu"><a href="join.html">Join the Chamber</a></li>
+        <li class="menu"><a href="directory.html">Directory</a></li>
+        <li class="menu"><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Welcome to the West&nbsp;Jordan&nbsp;Chamber!</h1>
+    <div class="herodiv">
+      <picture>
+        <source media="(min-width: 801px)" srcset="images/welcome1100a.jpg">
+        <source media="(min-width: 556px)" srcset="images/welcome800a.jpg">
+        <img src="images/welcome560a.jpg" alt="Welcome to West Jordan Sign">
+      </picture>
+      <a href="join.html">
+        <section class="calltoaction">
+          <h2 class="actionheader">Join the Chamber!</h2>
+          <p class="actionparagraph">If you would like to take advantage of all the benefits our chamber has to offer, <strong>click HERE</strong> to fill out an application.</p>
+        </section>
+      </a>
+    </div>
+    <section class="about">
+      <h2>About Us</h2>
+      <p>The West Jordan Chamber of Commerce is a family of businesses that represents a strong voice in the local community.  It is our goal to make the community stronger by supporting local businesses and creating a strong relationship between our members and the local community.  We believe that when the community spends at home, the local businesses are able to offer greater support.  Businesses are able to provide better prices on goods and provide more employment opportunities to the community.</p>
+    </section>
+    <aside>
+      <section class="weathersummary">
+        <h2 class="weathsumhead" data-lat="40.6097" data-lon="-111.9391">Weather Summary</h2>
+        <ul class="weathsumleft">
+            <li>Currently:</li>
+            <li>Current Temp:</li>
+            <li>High:</li>
+            <li>Humidity:</li>
+        </ul>
+        <ul class="weathsumright">
+            <li><span id="currentcondition"></span> &nbsp;</li>
+            <li><span id="currenttemp"></span> &#8457;</li>
+            <li><span id="hightemp"></span> &#8457;</li>
+            <li><span id="humidity"></span> &nbsp;</li>
+        </ul>
+      </section>
+      <section class="forecast">
+        <h2 class="forecasthead">3 Day Forecast</h2>
+        <div class="break"></div>
+        <div class="forecastdiv">
+            <div class = "day" id="day1"></div>
+            <div class="forecastimg"><img class = 'weathericon' id = 'weathericon1' src="#" alt="#"></div>
+            <div class="temp"><span id="temp1"></span> &#8457;</div>
+        </div>
+        <div class="forecastdiv">
+            <div class = "day" id="day2"></div>
+            <div class="forecastimg"><img class = 'weathericon' id = 'weathericon2' src="#" alt="#"></div>
+            <div class="temp"><span id="temp2"></span> &#8457;</div>
+        </div>
+        <div class="forecastdiv">
+            <div class = "day" id="day3"></div>
+            <div class="forecastimg"><img class = 'weathericon' id = 'weathericon3' src="#" alt="#"></div>
+            <div class="temp"><span id="temp3"></span> &#8457;</div>
+        </div>
+      </section>
+    </aside>
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <article>
+        <h3>Networking Luncheon</h3>
+        <h4>7/21/2021 1:00 PM</h4>
+        <p>Come join us for a networking lunch at Lucky's Iron Door Roadhouse.  Get to know your fellow
+          business owners and develop relationships.
+        </p>
+        <p>Admittance is free.  You just need to purchase your own food from the menu.</p>
+      </article>
+      <article>
+        <h3>First Fridays Networking</h3>
+        <h4>8/6/2021 8:00 AM - 10:00 AM</h4>
+        <p>Come join us at All Star Entertainment 1776 W 7800 S for our friday networking event.
+          Admission is $5.00.  Come have a good time and develop some new professional relationships in a fun and stress free environment.</a>
+        </p>
+      </article>
+      <article>
+        <h3>Complimentary Carwash</h3>
+        <h4>8/14/2021 10:00AM - 2:00PM</h4>
+        <p>Quick Quack Car Wash has setup a day where all chamber members can come in for a complimentary car wash, and then meet in the adjacent parking lot for refreshements.
+          Come get a car wash and do some networking!
+        </p>
+      </article>
+    </section>
+    <section class="featured">
+      <h2>Featured Members</h2>
+      <article class="featcomp">
+        <h3>Quick Quack Car Wash</h3>
+        <h4>1338 West 9000 South<br>West Jordan, UT 84088</h4>
+        <p>Quick Quack Car Wash has some of the best car washes in the state with great packages to keep your cars clean. </p>
+        <img src="images/quickquack.jpg" alt="quick quack car wash">
+      </article>
+      <article class="featcomp">
+        <h3>Lucky's Iron Door Roadhouse</h3>
+        <h4>3754 West Center View Way <br>West Jordan, UT 84084</h4>
+        <p>Lucky's Iron Door Roadhouse never dissapoints when you are looking for a great meal.</p>
+        <img src="images/irondoor.jpg" alt="Iron Door Restaurant">
+      </article>
+      <article class="featcomp">
+        <h3>All Star Entertainment</h3>
+        <h4>1776 West 7800 South<br>West Jordan, UT 84088</h4>
+        <p>All Star Entertainment is a fantastic all around family fun center with bowling, arcades, and more.</p>
+        <img src="images/allstar.jpg" alt="All Star Entertainment">
+      </article>
+    </section>
+    <section class="contact">
+      <h2>West Jordan Chamber of Commerce</h2>
+      <p><img class="icon" src="images/icons/locationicon.png" alt="map marker icon">3333 West 9999 South | West Jordan, Utah 84084</p>
+      <p><img class="icon" src="images/icons/phoneicon.png" alt="phone icon">801-555-0123</p>
+      <p>✉contact@westjordancoc.com</p>
+      <div class="social"><a class="whitelinks" href="https://www.facebook.com" target="_blank" rel="noopener"><img class="socialicon" src="images/icons/facebookicon.png" alt="white facebook icon"></a> <a class="whitelinks" href="https://www.pinterest.com" target="_blank" rel="noopener"><img class="socialicon" src="images/icons/pinteresticon.png" alt="white pinterest icon"></a> <a class="whitelinks" href="https://www.twitter.com" target="_blank" rel="noopener"><img class="socialicon" src="images/icons/twittericon.png" alt="white twitter icon"></a> <a class="whitelinks" href="https://www.whatsapp.com" target="_blank" rel="noopener"><img class="socialicon" src="images/icons/whatsappicon.png" alt="white whatsapp icon"> </a></div>
+    </section>
+  </main>
+  <footer>
+    <p> © 2021 | Scott R. Jensen | West Jordan, Utah</p>
+    <p><span><a class="whitelinks" href="attributions.html">Attributions</a> | <a class="whitelinks" href="planningdocument/index.html">Site Plan</a></span></p>
+  </footer>
+</body>
+</html>
