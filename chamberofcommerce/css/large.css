@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.featured h2 {
+.featured h2, .cityevents h2 {
   grid-column: 1 / span 3;
 }
 
@@ -12,5 +12,15 @@ section.featured article:nth-child(4) {
   display: block;
 }
 
+.externalimage {
+  max-width: 40%;
+}
 
+.demographics {
+  grid-template-columns: 1fr 2fr;
+}
+
+.cityevents {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 }

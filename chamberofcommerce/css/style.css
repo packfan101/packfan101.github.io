@@ -2,6 +2,12 @@ body {
   font-size:16px;
   max-width: 68.75rem;
   margin: 0 auto;
+  font-family: 'Roboto', Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-family: 'Shippori Mincho', Georgia, serif;
+
 }
 
 header img {
@@ -99,7 +105,7 @@ li.active a {
 }
 /*#endregion*/
 
-h1 {
+h1, .cityevent h3 {
   text-align: center;
 }
 
@@ -114,7 +120,7 @@ h1 {
   text-decoration: none;
 }
 
-.about, .events, .featured, .contact, footer {
+.about, .events, .featured, .contact, footer, .history, .demographics, .cityevents {
   background-color: rgb(19,80,133);
   color: white;
   border-radius: .5em;
@@ -122,9 +128,10 @@ h1 {
   margin: .5em 0;
 }
 
-.featcomp {
+.featcomp, .cityevent {
   color: black;
 }
+
 
 .contact, footer {
   text-align: center;
@@ -143,7 +150,7 @@ h1 {
 }
 /* Weather Info */
 /*#region*/
-aside, .featcomp, .forecastdiv {
+aside, .featcomp, .forecastdiv, .cityevent {
   border:.1em solid black;
   border-radius: 1em;
   box-shadow: .2em .2em .8em .2em black;
@@ -206,3 +213,33 @@ aside, .featcomp, .forecastdiv {
   text-align: center;
 }
 /*#endregion*/
+
+
+
+.history {
+  min-height: 23em;
+}
+
+.demographics h2 {
+  grid-column: 1 / span 2;
+}
+
+.demographics h3, .demographics h4 {
+  margin: 0;
+  
+}
+
+.demographics ul {
+  margin-top: 0;
+}
+
+.demographics p, .demographics h3, .demographics h4, .demographics ul {
+  grid-column: 2;
+}
+
+.population {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
