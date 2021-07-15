@@ -62,11 +62,11 @@ nav a:hover {
 }
 
 .menu:hover {
-  background-color:rgb(31, 129, 52);
+  background-color:rgb(48, 180, 76);
 }
 
 li.active {
-  background-color:rgb(31,129,52);
+  background-color:rgb(48,180,76);
 }
 
 li.active a {

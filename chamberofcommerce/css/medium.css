@@ -27,7 +27,7 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(48,180,76);
+  color: rgb(48, 150, 70);
   font-size:larger;
 }
 
@@ -40,7 +40,7 @@ li.active {
 }
 
 li.active a {
-  color: rgb(48,180,76);
+  color: rgb(48, 150, 70);
 }
 
 .herodiv {
