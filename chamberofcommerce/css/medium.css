@@ -143,4 +143,13 @@ section.featured article:nth-child(4) img {
   grid-template-columns: 1fr 1fr;
 }
 
+form, .memberbenefits {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+input.custinput, textarea {
+  max-width: 97%;
+}
+
 }

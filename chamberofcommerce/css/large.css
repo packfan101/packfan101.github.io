@@ -23,4 +23,19 @@ section.featured article:nth-child(4) {
 .cityevents {
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: space-between;
+}
+
+.grid h1 {
+  grid-column: 1 / span 2;
+}
+
+form, .memberbenefits {
+  max-width: 95%;
+  margin: 0;
+}
 }
