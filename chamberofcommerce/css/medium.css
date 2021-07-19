@@ -137,7 +137,6 @@ input.custinput, textarea {
 .buscard {
   display: flex;
   flex-direction: column;
-  justify-items: space-around;
 }
 
 .views {
