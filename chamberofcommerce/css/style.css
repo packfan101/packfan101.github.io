@@ -2,12 +2,11 @@ body {
   font-size:16px;
   max-width: 68.75rem;
   margin: 0 auto;
-  font-family: 'Roboto', Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, a {
-  font-family: 'Shippori Mincho', Georgia, serif;
-  font-weight: 800;
+  font-family: 'Shippori Mincho', serif;
 
 }
 
