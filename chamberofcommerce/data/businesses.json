@@ -2,7 +2,8 @@
   "businesses": [
     {
       "businessname": "Quick Quack Car Wash",
-      "address": "1338 West 9000 South",
+      "phone": "801-609-1694",
+      "address": "1338 W 9000 S",
       "city": "West&nbsp;Jordan",
       "state": "UT",
       "zip": "84084",
@@ -13,7 +14,8 @@
     },
     {
       "businessname": "Lucky's Iron Door Roadhouse",
-      "address": "3754 West Center View Way",
+      "phone": "801-878-9439",
+      "address": "3754 W Center View Way",
       "city": "West&nbsp;Jordan",
       "state": "UT",
       "zip": "84084",
@@ -24,7 +26,8 @@
     },
     {
       "businessname": "All Star Entertainment",
-      "address": "1776 West 7800 South",
+      "phone": "801-566-6627",
+      "address": "1776 W 7800 S",
       "city": "West&nbsp;Jordan",
       "state": "UT",
       "zip": "84084",
@@ -35,7 +38,8 @@
     },
     {
       "businessname": "C-A-L Ranch Stores",
-      "address": "2735 West 7800 South",
+      "phone": "801-569-2368",
+      "address": "2735 W 7800 S",
       "city": "West&nbsp;Jordan",
       "state": "UT",
       "zip": "84084",
@@ -46,6 +50,7 @@
     },
     {
       "businessname": "Altitude Trampoline Park",
+      "phone": "385-255-9188",
       "address": "3813 W Center View Way",
       "city": "West&nbsp;Jordan",
       "state": "UT",
@@ -57,6 +62,7 @@
     },
     {
       "businessname": "Kwik Kopy Business Solutions",
+      "phone": "801-280-2180",
       "address": "4256 W 8370 S",
       "city": "West&nbsp;Jordan",
       "state": "UT",
@@ -68,6 +74,7 @@
     },
     {
       "businessname": "Cinemark 24 Jordan Landing",
+      "phone": "801-282-8847",
       "address": "7301 S Jordan Landing Blvd",
       "city": "West&nbsp;Jordan",
       "state": "UT",
@@ -79,7 +86,8 @@
     },
     {
       "businessname": "alphagraphics",
-      "address": "1231 West 9000 South, Suite A",
+      "phone": "801-569-2679",
+      "address": "1231 W 9000 S, STE A",
       "city": "West&nbsp;Jordan",
       "state": "UT",
       "zip": "84084",
@@ -90,6 +98,7 @@
     },
     {
       "businessname": "Apollo Burger",
+      "phone": "801-255-2700",
       "address": "7692 S Redwood Rd",
       "city": "West&nbsp;Jordan",
       "state": "UT",

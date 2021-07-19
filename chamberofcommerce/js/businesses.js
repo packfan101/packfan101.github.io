@@ -10,7 +10,6 @@ fetch(businessjson)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);
     const businesses = jsonObject['businesses'];
 
     for (let i=0; i < businesses.length; i++) {
@@ -20,19 +19,23 @@ fetch(businessjson)
       let logo = document.createElement('img');
       let address = document.createElement('p');
       let url = document.createElement('a');
+      let phone = document.createElement('p');
       
 
       h2.textContent = `${businesses[i].businessname}`;
       description.textContent = `${businesses[i].description}`;
-      address.innerHTML = `${businesses[i].address} | ${businesses[i].city},&nbsp${businesses[i].state}&nbsp;${businesses[i].zip}`;
+      address.innerHTML = `${businesses[i].address}<br>${businesses[i].city},&nbsp${businesses[i].state}&nbsp;${businesses[i].zip}`;
       url.textContent = `Website`;
+      phone.textContent = `${businesses[i].phone}`;
 
       description.setAttribute('class', "busdescription");
       address.setAttribute('class', "busaddress");
+      phone.setAttribute('class', "busphone");
 
       card.appendChild(h2);
       card.appendChild(logo);
       card.appendChild(description);
+      card.appendChild(phone);
       card.appendChild(address);
       card.appendChild(url);
 

@@ -152,22 +152,35 @@ input.custinput, textarea {
 
 .displaylist {
   display: grid;
-  grid-template-columns: 1.75fr 2fr 100px;
+  grid-template-columns: 1.5fr 100px 1.6fr 100px;
+  min-height: 28.8px;
+  align-items: center;
+}
+
+.displaylist h2, .displaylist .busphone, .displaylist .busurl, .displaylist .logo, .displaylist .busdescription {
+  margin: 0;
+  font-size: .8em;
+}
+
+.displaylist .busaddress {
+  margin: 0;
+  font-size: .65em;
 }
 
 .displaylist h2 {
   grid-column: 1;
-  margin: 0;
+}
+
+.displaylist .busphone {
+  grid-column: 2;
 }
 
 .displaylist .busaddress {
-  grid-column: 2;
-  margin: 0;
+  grid-column: 3;
 }
 
 .displaylist .busurl {
-  grid-column: 3;
-  margin: 0;
+  grid-column: 4;
 }
 
 .displaylist .logo, .displaylist .busdescription {

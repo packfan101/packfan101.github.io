@@ -34,4 +34,12 @@ form, .memberbenefits {
   max-width: 95%;
   margin: 0;
 }
+
+.displaylist h2 {
+  font-size: 1em;
+}
+
+.displaylist .busaddress {
+  font-size: 1em;
+}
 }

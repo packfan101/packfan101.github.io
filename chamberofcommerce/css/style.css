@@ -105,7 +105,6 @@ nav a {
   color: white;
   text-decoration: none;
   width: 100%;
-  height: 60.08%; 
 }
 
 nav a:hover, .eventlink {
@@ -128,7 +127,7 @@ li.active a {
   display: block;
 }
 
-.open, .close {
+.open, a .close {
   display:inline-block;
 }
 

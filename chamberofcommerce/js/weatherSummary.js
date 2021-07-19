@@ -5,7 +5,6 @@ const weatherURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&l
 fetch(weatherURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
     document.querySelector('#currentcondition').textContent = jsObject.current.weather[0].main;
     document.querySelector('#currenttemp').textContent = jsObject.current.temp.toFixed(0);
     document.querySelector('#hightemp').textContent = jsObject.daily[0].temp.max.toFixed(0);
