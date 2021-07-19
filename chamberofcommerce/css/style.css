@@ -43,7 +43,7 @@ h1, .cityevent h3, .centered {
   text-decoration: none;
 }
 
-.about, .events, .featured, .contact, footer, .history, .demographics, .cityevents, form, .memberbenefits, .thanks, .businesses {
+.about, .events, .featured, .contact, footer, .history, .demographics, .cityevents, form, .memberbenefits, .thanks, .businesses, .board, .map {
   background-color: rgb(19,80,133);
   color: white;
   border-radius: .5em;
@@ -236,7 +236,7 @@ aside, .featcomp, .forecastdiv, .cityevent, .buscard {
 /* JOIN PAGE */
 /*#region*/
 
-form fieldset, .memberbenefits fieldset {
+form fieldset, .memberbenefits fieldset, .board fieldset {
   margin: 2em 0;
 }
 
@@ -245,7 +245,7 @@ fieldset legend {
   font-family: 'Shippori Mincho', Georgia, serif;
 }
 
-.custInfo, .busInfo, .radio {
+.custInfo, .busInfo, .radio, .contactInfo {
   display: flex;
   flex-direction: column;
 }
@@ -305,4 +305,30 @@ select.custinput {
   max-width: 200px;
   max-height: 150px;
   margin: auto;
+}
+
+.board fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board fieldset article {
+  text-align: center;
+}
+
+.board img {
+  width: 160px;
+  border-radius: 100%;
+}
+
+.map {
+  text-align: center;
+  height: 250px;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 600px;
 }

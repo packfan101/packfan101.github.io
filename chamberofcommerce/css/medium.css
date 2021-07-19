@@ -125,7 +125,7 @@ section.featured article:nth-child(4) img {
   grid-row: 2 / span 4;
 }
 
-form, .memberbenefits {
+form, .memberbenefits, .board {
   max-width: 75%;
   margin: 0 auto;
 }
@@ -186,4 +186,24 @@ input.custinput, textarea {
 .displaylist .logo, .displaylist .busdescription {
   display: none;
 }
+
+.board fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
+  row-gap: 1em;;
+}
+
+.board fieldset legend {
+  grid-column: 1 / span 2;
+}
+
+.map {
+  height: 400px;
+}
+
+.map iframe {
+  max-width: 600px;
+}
+
 }

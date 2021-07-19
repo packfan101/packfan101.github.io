@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>West Jordan Chamber</title>
+  <meta name="description" content="West Jordan Chamber of Commerce Home Page">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shippori+Mincho:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <script defer src="js/nav.js"></script>
+</head>
+<body>
+  <div class="weatheralert"><span class="alert"></span></div>
+  <header class="flex">
+    <img src="images/logo2.png" alt="chamber of commerce logo">
+    <nav>
+      <ul class="flex navigation">
+        <li class="ham"><a href="#"><img src="images/icons/hamburgermenu.png" alt="menu icon" class="menuicon"><img src="images/icons/closeicon.png" alt="close menu icon" class="closeicon"></a></li>
+        <li class="menu"><a href="index.html">Home</a></li>
+        <li class="menu"><a href="city.html">City</a></li>
+        <li class="menu"><a href="join.html">Join the Chamber</a></li>
+        <li class="menu"><a href="directory.html">Directory</a></li>
+        <li class="menu active"><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="contactgrid">
+      <h1>Contact Us</h1>
+      <div class="board">
+        <fieldset>
+          <legend>Board of Directors</legend>
+          <article>
+            <img src="images/board/lauriegale.jpg" alt="portrait of Laurie Gale">
+            <h2>Laurie Gale</h2>
+            <p>President and CEO</p>
+          </article>
+          <article>
+            <img src="images/board/markfeigh.jpg" alt="portrait of Mark Feigh">
+            <h2>Mark Feigh</h2>
+            <p>Workforce Development</p>
+            <p>C&C REAL ESTATE SERVICES</p>
+          </article>
+          <article>
+            <img src="images/board/brucehoins.jpg" alt="portrait of Bruce Hoins">
+            <h2>Bruce Hoins</h2>
+            <p>Sentext Solutions</p>
+          </article>
+          <article>
+            <img src="images/board/karlnebeker.jpg" alt="portrait of Karl Nebeker">
+            <h2>Karl Nebeker</h2>
+            <p>Treasurer/Economic Development</p>
+            <p>KAN ACCOUNTING AND TAX</p>
+          </article>
+          <article>
+            <img src="images/board/jasonkirkham.jpg" alt="portrait of Jason Kirkham">
+            <h2>Jason Kirkham</h2>
+            <p>Networking</p>
+            <p>LENDIO</p>
+          </article>
+          <article>
+            <img src="images/board/stacieford.jpg" alt="portrait of Stacie Ford">
+            <h2>Stacie Ford</h2>
+            <p>Elevate Your Mind Hypnosis</p>
+          </article>
+        </fieldset>
+      </div>
+      <form action="contactreceipt.html">
+        <fieldset class="contactinfo">
+          <legend>Contact Form</legend>
+          <label class="contactInfo">
+            First Name*
+            <input
+              class="custinput" 
+              type="text"
+              name="firstname"
+              pattern="[A-Za-z. -]{2,}"
+              required  
+            />
+          </label>
+          <label class="contactInfo">
+            Last Name*
+            <input
+              class="custinput" 
+              type="text"
+              name="lastname"
+              pattern="[A-Za-z. -]{2,}"
+              required  
+            />
+          </label>
+          <label class="contactInfo">
+            Email*
+            <input
+              class="custinput" 
+              type="email"
+              name="email"
+              placeholder="someone@gmail.com"
+              required  
+            />
+          </label>
+          <label class="contactInfo">
+            Cell Phone
+            <input
+            class="custinput"
+            type="tel"
+            name="phone"
+          />
+          </label>
+          <label class="contactInfo">
+            Business Name
+            <input
+              class="custinput" 
+              type="text"
+              name="businessname"
+              pattern="[A-Za-z. -]{2,}"
+              />
+          </label>
+          <label class="contactInfo">
+            Business description
+            <textarea name="comment" cols="30" rows="19"></textarea>
+          </label>
+        </fieldset>
+        <input id="submitBtn" type="submit" value="Submit Contact Request">
+      </form>
+    </section>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48467.410632913015!2d-112.03180811329251!3d40.603120311853175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528ef8ed5eba6f%3A0x7229563bc344160!2sWest%20Jordan%2C%20UT!5e0!3m2!1sen!2sus!4v1626736114664!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <section class="contact">
+      <h2>West Jordan Chamber of Commerce</h2>
+      <p><img class="icon" src="images/icons/locationicon.png" alt="map marker icon">3333 West 9999 South | West Jordan, Utah 84084</p>
+      <p><img class="icon" src="images/icons/phoneicon.png" alt="phone icon">801-555-0123</p>
+      <p>✉contact@westjordancoc.com</p>
+      <div class="social"><a class="whitelinks" href="https://www.facebook.com" target="_blank" rel="noopener"><img class="socialicon" src="images/icons/facebookicon.png" alt="white facebook icon"></a> <a class="whitelinks" href="https://www.pinterest.com" target="_blank" rel="noopener"><img class="socialicon" src="images/icons/pinteresticon.png" alt="white pinterest icon"></a> <a class="whitelinks" href="https://www.twitter.com" target="_blank" rel="noopener"><img class="socialicon" src="images/icons/twittericon.png" alt="white twitter icon"></a> <a class="whitelinks" href="https://www.whatsapp.com" target="_blank" rel="noopener"><img class="socialicon" src="images/icons/whatsappicon.png" alt="white whatsapp icon"> </a></div>
+    </section>
+  </main>
+  <footer>
+    <p> © 2021 | Scott R. Jensen | West Jordan, Utah</p>
+    <p><span><a class="whitelinks" href="attributions.html">Attributions</a> | <a class="whitelinks" href="planningdocument/index.html">Site Plan</a></span></p>
+  </footer>
+</body>
+</html>
