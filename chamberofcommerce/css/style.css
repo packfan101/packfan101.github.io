@@ -139,7 +139,7 @@ li.active a {
 
 /* Weather Info */
 /*#region*/
-aside, .featcomp, .forecastdiv, .cityevent, .buscard {
+aside, .featcomp, .forecastdiv, .cityevent, .buscard/*, .board fieldset article*/ {
   border:.1em solid black;
   border-radius: 1em;
   box-shadow: .2em .2em .8em .2em black;
@@ -331,4 +331,8 @@ select.custinput {
   height: 100%;
   max-width: 400px;
   max-height: 600px;
+}
+/*
+.board fieldset article {
+  align-self: stretch;
 }
