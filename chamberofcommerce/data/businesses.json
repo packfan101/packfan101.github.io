@@ -1,0 +1,103 @@
+{
+  "businesses": [
+    {
+      "businessname": "Quick Quack Car Wash",
+      "address": "1338 West 9000 South",
+      "city": "West&nbsp;Jordan",
+      "state": "UT",
+      "zip": "84084",
+      "url": "https://www.dontdrivedirty.com",
+      "logo": "images/quickquacklogo.png",
+      "description": "Some of the best car washes in the state with great packages to keep your cars clean",
+      "category": "Automotive"
+    },
+    {
+      "businessname": "Lucky's Iron Door Roadhouse",
+      "address": "3754 West Center View Way",
+      "city": "West&nbsp;Jordan",
+      "state": "UT",
+      "zip": "84084",
+      "url": "https://luckysirondoor.com",
+      "logo": "images/irondoorlogo.png",
+      "description": "World's Best Burger! Voted the Best Burger in Utah",
+      "category": "Restaurant"
+    },
+    {
+      "businessname": "All Star Entertainment",
+      "address": "1776 West 7800 South",
+      "city": "West&nbsp;Jordan",
+      "state": "UT",
+      "zip": "84084",
+      "url": "https://allstarbowlingandentertainment.com",
+      "logo": "images/allstarlogo.png",
+      "description": "For over 20 years, we have been serving fun in the community with bowling and entertainment. Our service and top quality attractions are what separates us from the rest.",
+      "category": "Entertainment"
+    },
+    {
+      "businessname": "C-A-L Ranch Stores",
+      "address": "2735 West 7800 South",
+      "city": "West&nbsp;Jordan",
+      "state": "UT",
+      "zip": "84084",
+      "url": "https://www.calranch.com",
+      "logo": "images/calranchlogo.svg",
+      "description": "Whether you're looking for the latest in Western Wear and Gear to Sporting Goods, Home Decor or Livestock Feed, we've got what you need",
+      "category": "Retail"
+    },
+    {
+      "businessname": "Altitude Trampoline Park",
+      "address": "3813 W Center View Way",
+      "city": "West&nbsp;Jordan",
+      "state": "UT",
+      "zip": "84084",
+      "url": "https://www.altitudetrampolinepark.com/locations/west-jordan",
+      "logo": "images/altitudelogo.svg",
+      "description": "Channel your energy, cut loose with your best flips and tricks, and prepare for the Jump Life!℠ Featuring thousands of square feet of indoor trampolines and other attractions, Altitude Trampoline Park is an exciting destination for families, groups, and individual jumpers to have healthy, athletic fun.",
+      "category": "Entertainment"
+    },
+    {
+      "businessname": "Kwik Kopy Business Solutions",
+      "address": "4256 W 8370 S",
+      "city": "West&nbsp;Jordan",
+      "state": "UT",
+      "zip": "84084",
+      "url": "https://mykkp.com",
+      "logo": "images/kwikkopylogo.png",
+      "description": "Kwik Kopy can help with all your printing, copying, signage and apparel needs.",
+      "category": "Graphics/Printing"
+    },
+    {
+      "businessname": "Cinemark 24 Jordan Landing",
+      "address": "7301 S Jordan Landing Blvd",
+      "city": "West&nbsp;Jordan",
+      "state": "UT",
+      "zip": "84084",
+      "url": "https://www.cinemark.com/theatres/ut-west-jordan/cinemark-24-jordan-landing-and-xd",
+      "logo": "images/cinemarklogo.webp",
+      "description": "We are dedicated to making the movie experience memorable, One Guest at a time.",
+      "category": "Entertainment"
+    },
+    {
+      "businessname": "alphagraphics",
+      "address": "1231 West 9000 South, Suite A",
+      "city": "West&nbsp;Jordan",
+      "state": "UT",
+      "zip": "84084",
+      "url": "https://www.alphagraphics.com/us-utah-west-jordan-us403",
+      "logo": "images/alphagraphicslogo.png",
+      "description": "We offer custom print and marketing solutions that drive your business forward. At AlphaGraphics, we make ideas come to life.",
+      "category": "Graphics/Printing"
+    },
+    {
+      "businessname": "Apollo Burger",
+      "address": "7692 S Redwood Rd",
+      "city": "West&nbsp;Jordan",
+      "state": "UT",
+      "zip": "84084",
+      "url": "https://apolloburgers.com",
+      "logo": "images/apolloburgerlogo.png",
+      "description": "We love giving Utah families quality food and quick service at an affordable price and we've been at it for over 30 years now!",
+      "category": "Restaurant"
+    }
+  ]
+}

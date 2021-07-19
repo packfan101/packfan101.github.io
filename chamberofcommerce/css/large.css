@@ -1,5 +1,5 @@
 @media only screen and (min-width: 50em) {
-.featured {
+.featured, .cityevents, .displaygrid {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -18,10 +18,6 @@ section.featured article:nth-child(4) {
 
 .demographics {
   grid-template-columns: 1fr 2fr;
-}
-
-.cityevents {
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid {

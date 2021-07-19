@@ -25,9 +25,10 @@ main {
 }
 img {
   max-width: 100%;
+  max-height: 100%;
 }
 
-h1, .cityevent h3 {
+h1, .cityevent h3, .centered {
   text-align: center;
 }
 
@@ -42,7 +43,7 @@ h1, .cityevent h3 {
   text-decoration: none;
 }
 
-.about, .events, .featured, .contact, footer, .history, .demographics, .cityevents, form, .memberbenefits, .thanks {
+.about, .events, .featured, .contact, footer, .history, .demographics, .cityevents, form, .memberbenefits, .thanks, .businesses {
   background-color: rgb(19,80,133);
   color: white;
   border-radius: .5em;
@@ -50,7 +51,7 @@ h1, .cityevent h3 {
   margin: .5em 0;
 }
 
-.featcomp, .cityevent {
+.featcomp, .cityevent, .buscard, .busurl {
   color: black;
 }
 
@@ -123,34 +124,23 @@ li.active a {
   color: black;
 }
 
-.ham {
+.ham, .responsive li {
   display: block;
 }
 
-.open {
+.open, .close {
   display:inline-block;
 }
 
-.closeicon {
+.closeicon, .hide, .views {
   display: none;
 }
 
-.close {
-  display:inline-block;
-}
-
-.hide {
-  display:none;
-}
-
-.responsive li {
-  display: block;
-}
 /*#endregion*/
 
 /* Weather Info */
 /*#region*/
-aside, .featcomp, .forecastdiv, .cityevent {
+aside, .featcomp, .forecastdiv, .cityevent, .buscard {
   border:.1em solid black;
   border-radius: 1em;
   box-shadow: .2em .2em .8em .2em black;
@@ -310,3 +300,10 @@ select.custinput {
   margin-bottom:.5em;
 }
 /*#endregion*/
+
+
+.logo {
+  max-width: 200px;
+  max-height: 150px;
+  margin: auto;
+}
