@@ -42,7 +42,8 @@ nav a:hover {
 }
 
 li.active {
-  background-color:transparent;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 li.active a {
