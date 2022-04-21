@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #FAEBD7;
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+}
+
+header {
+    background-color: #6495ED;
+    text-align: right;
+    padding: 1.5em;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 0 1em 0;
+}
+
+a, a:visited {
+    color: #6495ED;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+header a, h1 a, nav a:visited, h1 a:visited {
+    color: #FAEBD7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+article {
+    background-color: white;
+    margin: 1.5em;
+    padding: 1.5em;
+    box-shadow: 2px 2px 2px 2px lightgray;
+}
+
+article h2 a, article h2 a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+article h2 a:hover {
+    color: #6495ED;
+    text-decoration: underline;
+}
+
+nav a:active, a:active, article h2 a:active, h1 a:active {
+    color: #DEB887;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.post-date {
+    color:rgb(151, 151, 151);
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 48em) {
+    div {
+        display: grid;
+        grid-template-columns: 210px 1fr;
+    }
+    
+    article {
+        max-width: 500px;
+        margin: 3em auto;
+    }
+
+}
