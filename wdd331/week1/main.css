@@ -38,12 +38,12 @@ li a:visited, h2 a:visited, p a:visited {
     color: #666;
 }
 
-li a:active, h2 a:active, p a:active {
-    color: #DEB887;
-}
-
 li a:hover, h2 a:hover, p a:hover {
     color: #00ddff;
+}
+
+li a:active, h2 a:active, p a:active {
+    color: #DEB887;
 }
 
 h1 a:link, h1 a:visited, h1 a:active, h1 a:hover {

@@ -1,0 +1,62 @@
+body {
+  background-color: darkred; }
+
+h1 {
+  color: white; }
+
+#contactform {
+  background-color: #af9762; }
+  #contactform input, #contactform textarea {
+    background-color: #eedbc0;
+    flex: 2; }
+  @media (max-width: 30.99em) {
+    #contactform {
+      width: 100%;
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto; }
+      #contactform fieldset > div {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap; } }
+  @media (min-width: 31em) {
+    #contactform {
+      width: 90%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto; }
+      #contactform fieldset > div {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        margin-bottom: 1em; }
+        #contactform fieldset > div label {
+          width: 20%;
+          text-align: right;
+          padding-right: 1em; }
+        #contactform fieldset > div input {
+          width: 80%; } }
+  @media (min-width: 60em) {
+    #contactform {
+      width: 70%;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto; }
+      #contactform fieldset > div {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap; } }
+
+/*# sourceMappingURL=styles.css.map */
