@@ -1,0 +1,17 @@
+@import url("https://use.typekit.net/len5cji.css");
+* {
+  box-sizing: border-box; }
+
+html {
+  background-color: #daede2;
+  padding: 5%; }
+
+body {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 85%;
+  color: #333;
+  background-color: #777777ff;
+  margin: 0;
+  padding: 1em; }
+
+/*# sourceMappingURL=style.css.map */
