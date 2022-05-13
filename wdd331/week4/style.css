@@ -64,6 +64,10 @@ a:hover {
   border-color: #ff9341;
 }
 
+img {
+  max-width: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
