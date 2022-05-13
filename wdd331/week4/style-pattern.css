@@ -1,25 +1,28 @@
 @import url("https://use.typekit.net/len5cji.css");
-h2,
+h1,
 h3,
 h4 {
   font-family: "magneto", sans-serif;
   margin: 0;
 }
 
-h1 {
-  background: #ff9341;
+h1,
+h2 {
+  text-align: right;
   color: #fff;
-  display: inline-block;
-  font-weight: normal;
-  margin-bottom: 1em;
-  padding: 0.5em 1em;
+}
+
+h1 {
+  font-weight: 900;
+  /* Heavy */
+  font-size: 4em;
 }
 
 h2 {
   color: #fff;
-  font-weight: 900;
-  /* Heavy */
-  font-size: 6em;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 3em;
   letter-spacing: 1px;
   line-height: 1em;
 }
@@ -51,48 +54,14 @@ p {
 }
 
 a {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   color: #333;
   text-decoration: none;
-  transition: border-color 0.2s ease-in-out;
 }
 
 a:hover {
+  color: #ff9341;
   border-color: #ff9341;
-}
-
-[role=banner] > h1 {
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.summary {
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 15% 0;
-}
-.summary p:last-child {
-  border-top: 1px solid #ff9341;
-  margin-top: 1em;
-  padding-top: 1.5em;
-}
-.summary a {
-  color: #fff;
-}
-
-.preamble {
-  background: rgba(255, 255, 255, 0.9);
-  color: #333;
-  margin-left: -30%;
-  padding: 5% 5% 5% 30%;
-}
-
-.intro {
-  padding: 5%;
 }
 
 * {
@@ -114,7 +83,7 @@ body {
 }
 
 section {
-  background-color: white;
+  background-color: #ffffff;
   padding: 1em;
   margin: 1em;
 }
@@ -171,6 +140,15 @@ section {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: #fff;
+}
+
+.colored-background {
+  color: #fff;
+  background-color: #777777;
+}
+
+main > p {
   color: #fff;
 }
 

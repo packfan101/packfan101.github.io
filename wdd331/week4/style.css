@@ -1,4 +1,69 @@
 @import url("https://use.typekit.net/len5cji.css");
+h1,
+h3,
+h4 {
+  font-family: "magneto", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2 {
+  text-align: right;
+  color: #fff;
+}
+
+h1 {
+  font-weight: 900;
+  /* Heavy */
+  font-size: 4em;
+}
+
+h2 {
+  color: #fff;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 3em;
+  letter-spacing: 1px;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 2.25em;
+  font-weight: 200;
+  /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 200;
+  /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0;
+}
+
+p {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0.5em 0;
+  margin: 0;
+}
+
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff9341;
+  border-color: #ff9341;
+}
+
 * {
   box-sizing: border-box;
 }
