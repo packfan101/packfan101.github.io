@@ -68,21 +68,113 @@ img {
   max-width: 100%;
 }
 
+div.preamble {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #ffffff;
+  border: solid 1px #000000;
+  box-shadow: 10px 10px 5px #666666;
+  max-width: 400px;
+  padding: 1em;
+  margin: 1em;
+}
+div.preamble > h3 {
+  grid-row: 4;
+}
+div.preamble > p {
+  background-color: #666666;
+  color: #fff;
+}
+
+div.explanation {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #ffffff;
+  border: solid 1px #000000;
+  box-shadow: 10px 10px 5px #666666;
+  max-width: 400px;
+  padding: 1em;
+  margin: 1em;
+}
+div.explanation > h3 {
+  grid-row: 3;
+}
+div.explanation > p {
+  background-color: #666666;
+  color: #fff;
+}
+
+div.participation {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #ffffff;
+  border: solid 1px #000000;
+  box-shadow: 10px 10px 5px #666666;
+  max-width: 400px;
+  padding: 1em;
+  margin: 1em;
+}
+div.participation > h3 {
+  grid-row: 4;
+}
+div.participation > p {
+  background-color: #666666;
+  color: #fff;
+}
+
+div.benefits {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #ffffff;
+  border: solid 1px #000000;
+  box-shadow: 10px 10px 5px #666666;
+  max-width: 400px;
+  padding: 1em;
+  margin: 1em;
+}
+div.benefits > h3 {
+  grid-row: 4;
+}
+div.benefits > p {
+  background-color: #666666;
+  color: #fff;
+}
+
+div.requirements {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #ffffff;
+  border: solid 1px #000000;
+  box-shadow: 10px 10px 5px #666666;
+  max-width: 400px;
+  padding: 1em;
+  margin: 1em;
+}
+div.requirements > h3 {
+  grid-row: 6;
+}
+div.requirements > p {
+  background-color: #666666;
+  color: #fff;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  background-color: #daede2;
+  background-image: url("assets/background.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
   padding: 5%;
 }
 
 body {
+  max-width: 1100px;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 85%;
   color: #333;
-  background-color: #666666;
-  margin: 0;
+  margin: 0 auto;
   padding: 1em;
 }
 

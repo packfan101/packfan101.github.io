@@ -7,15 +7,18 @@
   box-sizing: border-box;
 }
 html {
-  background-color: $background-color;
+  background-image:url("assets/background.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
   padding: 5%;
 }
 
 body {
+  max-width: 1100px;
   font-family: $fonts-body;
   font-size: 85%;
   color: $text-dark;
-  background-color: $primary;
-  margin: 0;
+  margin: 0 auto;
   padding: 1em;
 }
+
