@@ -1,14 +1,4 @@
 @import url("https://use.typekit.net/len5cji.css");
-@keyframes trans {
-  from {
-    background-color: #000000;
-    color: #000000;
-  }
-  to {
-    background-color: #666666;
-    color: #ffffff;
-  }
-}
 h1,
 h3,
 h4 {
@@ -19,23 +9,28 @@ h4 {
 h1,
 h2 {
   text-align: center;
-  color: #333;
+  color: #fff;
 }
 
 h1 {
   font-weight: 900;
   /* Heavy */
   font-size: 4em;
+  color:black;
+  background-color:white;
+  background-size: 50px;
+  text-align: center;
 }
 
 h2 {
-  color: #333;
+  color:#ff9341;
   font-weight: normal;
   font-style: italic;
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: 1px;
   line-height: 1em;
-  margin-bottom: 0;
+  background-color: white;
+  text-align: center;
 }
 
 h3 {
@@ -79,25 +74,12 @@ img {
   max-width: 100%;
 }
 
-p:first-of-type::before {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: red;
-  margin: 0 auto;
-  position: relative;
-  top: -20px;
-  box-shadow: 2px 2px 5px #666666;
-}
-
 div.preamble {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #ffffff;
   border: solid 1px #000000;
-  box-shadow: 2px 2px 10px #666666;
+  box-shadow: 10px 10px 5px #666666;
   max-width: 400px;
   padding: 1em;
   margin: 1em;
@@ -106,12 +88,8 @@ div.preamble > h3 {
   grid-row: 4;
 }
 div.preamble > p {
-  background-color: #000000;
-  color: #000000;
-  animation-name: trans;
-  animation-duration: 5s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
+  background-color: #666666;
+  color: #fff;
 }
 
 div.explanation {
@@ -119,7 +97,7 @@ div.explanation {
   grid-template-columns: 1fr;
   background-color: #ffffff;
   border: solid 1px #000000;
-  box-shadow: 2px 2px 10px #666666;
+  box-shadow: 10px 10px 5px #666666;
   max-width: 400px;
   padding: 1em;
   margin: 1em;
@@ -128,12 +106,8 @@ div.explanation > h3 {
   grid-row: 3;
 }
 div.explanation > p {
-  background-color: #000000;
-  color: #000000;
-  animation-name: trans;
-  animation-duration: 5s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
+  background-color: #666666;
+  color: #fff;
 }
 
 div.participation {
@@ -141,7 +115,7 @@ div.participation {
   grid-template-columns: 1fr;
   background-color: #ffffff;
   border: solid 1px #000000;
-  box-shadow: 2px 2px 10px #666666;
+  box-shadow: 10px 10px 5px #666666;
   max-width: 400px;
   padding: 1em;
   margin: 1em;
@@ -150,12 +124,8 @@ div.participation > h3 {
   grid-row: 4;
 }
 div.participation > p {
-  background-color: #000000;
-  color: #000000;
-  animation-name: trans;
-  animation-duration: 5s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
+  background-color: #666666;
+  color: #fff;
 }
 
 div.benefits {
@@ -163,8 +133,8 @@ div.benefits {
   grid-template-columns: 1fr;
   background-color: #ffffff;
   border: solid 1px #000000;
-  box-shadow: 2px 2px 10px #666666;
-  max-width: 300px;
+  box-shadow: 10px 10px 5px #666666;
+  max-width: 400px;
   padding: 1em;
   margin: 1em;
 }
@@ -172,12 +142,8 @@ div.benefits > h3 {
   grid-row: 4;
 }
 div.benefits > p {
-  background-color: #000000;
-  color: #000000;
-  animation-name: trans;
-  animation-duration: 5s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
+  background-color: #666666;
+  color: #fff;
 }
 
 div.requirements {
@@ -185,8 +151,8 @@ div.requirements {
   grid-template-columns: 1fr;
   background-color: #ffffff;
   border: solid 1px #000000;
-  box-shadow: 2px 2px 10px #666666;
-  max-width: 600px;
+  box-shadow: 10px 10px 5px #666666;
+  max-width: 400px;
   padding: 1em;
   margin: 1em;
 }
@@ -194,12 +160,8 @@ div.requirements > h3 {
   grid-row: 6;
 }
 div.requirements > p {
-  background-color: #000000;
-  color: #000000;
-  animation-name: trans;
-  animation-duration: 5s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
+  background-color: #666666;
+  color: #fff;
 }
 
 * {
@@ -220,13 +182,6 @@ body {
   color: #333;
   margin: 0 auto;
   padding: 1em;
-}
-
-header, .summary {
-  background-color: #ffffff;
-  margin: 1em;
-  padding: 1em;
-  box-shadow: 2px 2px 10px #666666;
 }
 
 /*# sourceMappingURL=style.css.map */

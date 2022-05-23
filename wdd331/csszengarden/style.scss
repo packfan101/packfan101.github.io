@@ -22,3 +22,9 @@ body {
   padding: 1em;
 }
 
+header, .summary {
+  background-color: $accent2;
+  margin: 1em;
+  padding: 1em;
+  box-shadow: 2px 2px 10px $primary;
+}

@@ -25,16 +25,50 @@
   padding-top: 1.5em;
 }
 
-@mixin card() {
+@mixin card($width: 400px) {
   display: grid;
   grid-template-columns: 1fr;
   background-color: $accent2;
   border: solid 1px $accent3;
-  box-shadow: 10px 10px 5px $primary;
-  max-width: 400px;
+  box-shadow: 2px 2px 10px $primary;
+  max-width: $width;
   padding: 1em;
   margin: 1em;
 }
+
+@mixin develop() {
+  animation-name: trans;
+  animation-duration: 5s;
+  animation-timing-function:ease-in;
+  animation-fill-mode:forwards;
+}
+
+@mixin thumbtack() {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 0 auto;
+    position:relative;
+    top: -20px;
+    box-shadow: 2px 2px 5px $primary;
+  }
+
+
+
+@keyframes trans {
+  from{
+    background-color: $accent3;
+    color: $accent3;
+  }
+  to{
+    background-color: $primary;
+    color: $accent2;
+  }
+}
+
 // these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
 h1,
 h3,
@@ -45,8 +79,8 @@ h4 {
 
 h1,
 h2 {
-  text-align: right;
-  color: $text-light;
+  text-align: center;
+  color: $text-dark;
 }
 
 h1 {
@@ -54,12 +88,13 @@ h1 {
   font-size: 4em;
 }
 h2 {
-  color: $text-light;
+  color: $text-dark;
   font-weight: normal;
   font-style:italic;
   font-size: 3em;
   letter-spacing: 1px;
   line-height: 1em;
+  margin-bottom: 0;
 }
 h3 {
   font-size: 2.25em;

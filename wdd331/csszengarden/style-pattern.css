@@ -1,4 +1,14 @@
 @import url("https://use.typekit.net/len5cji.css");
+@keyframes trans {
+  from {
+    background-color: #000000;
+    color: #000000;
+  }
+  to {
+    background-color: #666666;
+    color: #ffffff;
+  }
+}
 h1,
 h3,
 h4 {
@@ -8,8 +18,8 @@ h4 {
 
 h1,
 h2 {
-  text-align: right;
-  color: #fff;
+  text-align: center;
+  color: #333;
 }
 
 h1 {
@@ -19,12 +29,13 @@ h1 {
 }
 
 h2 {
-  color: #fff;
+  color: #333;
   font-weight: normal;
   font-style: italic;
   font-size: 3em;
   letter-spacing: 1px;
   line-height: 1em;
+  margin-bottom: 0;
 }
 
 h3 {

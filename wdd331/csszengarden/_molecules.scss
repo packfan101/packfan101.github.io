@@ -1,14 +1,20 @@
 @use 'variables' as *;
 @use 'atoms';
 
+
+p:first-of-type::before {
+  @include atoms.thumbtack();
+}
+
 div.preamble {
     @include atoms.card();
     >h3 {
       grid-row: 4;
     }
     >p {
-      background-color: $primary;
-      color: $text-light;
+      background-color: $accent3;
+      color: $accent3;
+      @include atoms.develop();
     }
   }
   
@@ -18,8 +24,9 @@ div.preamble {
       grid-row: 3;
     }
     >p {
-      background-color: $primary;
-      color: $text-light;
+      background-color: $accent3;
+      color: $accent3;
+      @include atoms.develop();
     }
   }
   
@@ -29,27 +36,30 @@ div.preamble {
       grid-row: 4;
     }
     >p {
-      background-color: $primary;
-      color: $text-light;
+      background-color: $accent3;
+      color: $accent3;
+      @include atoms.develop();
     }
   }
   div.benefits {
-    @include atoms.card();
+    @include atoms.card(300px);
     >h3 {
       grid-row: 4;
     }
     >p {
-      background-color: $primary;
-      color: $text-light;
+      background-color: $accent3;
+      color: $accent3;
+      @include atoms.develop();
     }
   }
   div.requirements {
-    @include atoms.card();
+    @include atoms.card(600px);
     >h3 {
       grid-row: 6;
     }
     >p {
-      background-color: $primary;
-      color: $text-light;
+      background-color: $accent3;
+      color: $accent3;
+      @include atoms.develop();
     }
   }
