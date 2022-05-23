@@ -85,19 +85,19 @@ h2 {
 
 h1 {
   font-weight: 900; /* Heavy */
-  font-size: 4em;
+  font-size: calc(100% + 5vmin);
 }
 h2 {
   color: $text-dark;
   font-weight: normal;
   font-style:italic;
-  font-size: 3em;
+  font-size: calc(100% + 3vmin);
   letter-spacing: 1px;
   line-height: 1em;
   margin-bottom: 0;
 }
 h3 {
-  font-size: 2.25em;
+  font-size: calc(100% + 2vmin);
   font-weight: 200; /* Thin */
   letter-spacing: 1px;
   line-height: 1em;

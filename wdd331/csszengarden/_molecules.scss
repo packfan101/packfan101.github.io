@@ -2,64 +2,75 @@
 @use 'atoms';
 
 
-p:first-of-type::before {
-  @include atoms.thumbtack();
-}
+
 
 div.preamble {
-    @include atoms.card();
-    >h3 {
-      grid-row: 4;
-    }
-    >p {
-      background-color: $accent3;
-      color: $accent3;
-      @include atoms.develop();
-    }
+  @include atoms.card();
+  >h3 {
+    grid-row: 4;
   }
-  
-  div.explanation {
-    @include atoms.card();
-    >h3 {
-      grid-row: 3;
-    }
-    >p {
-      background-color: $accent3;
-      color: $accent3;
-      @include atoms.develop();
-    }
+  >p {
+    background-color: $accent3;
+    color: $accent3;
+    @include atoms.develop();
   }
-  
-  div.participation {
-    @include atoms.card();
-    >h3 {
-      grid-row: 4;
-    }
-    >p {
-      background-color: $accent3;
-      color: $accent3;
-      @include atoms.develop();
-    }
+}
+div.preamble p:first-of-type::before {
+  @include atoms.thumbtack();
+}
+div.explanation {
+  @include atoms.card();
+  >h3 {
+    grid-row: 3;
   }
-  div.benefits {
-    @include atoms.card(300px);
-    >h3 {
-      grid-row: 4;
-    }
-    >p {
-      background-color: $accent3;
-      color: $accent3;
-      @include atoms.develop();
-    }
+  >p {
+    background-color: $accent3;
+    color: $accent3;
+    @include atoms.develop();
   }
-  div.requirements {
-    @include atoms.card(600px);
-    >h3 {
-      grid-row: 6;
-    }
-    >p {
-      background-color: $accent3;
-      color: $accent3;
-      @include atoms.develop();
-    }
+}
+div.explanation p:first-of-type::before {
+  @include atoms.thumbtack();
+}  
+div.participation {
+  @include atoms.card();
+  >h3 {
+    grid-row: 4;
   }
+  >p {
+    background-color: $accent3;
+    color: $accent3;
+    @include atoms.develop();
+  }
+}
+div.participation p:first-of-type::before {
+  @include atoms.thumbtack();
+}
+div.benefits {
+  @include atoms.card(300px);
+  >h3 {
+    grid-row: 4;
+  }
+  >p {
+    background-color: $accent3;
+    color: $accent3;
+    @include atoms.develop();
+  }
+}
+div.benefits p:first-of-type::before {
+  @include atoms.thumbtack();
+}
+div.requirements {
+  @include atoms.card(600px);
+  >h3 {
+    grid-row: 6;
+  }
+  >p {
+    background-color: $accent3;
+    color: $accent3;
+    @include atoms.develop();
+  }
+}
+div.requirements p:first-of-type::before {
+  @include atoms.thumbtack();
+}

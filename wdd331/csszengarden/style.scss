@@ -22,9 +22,29 @@ body {
   padding: 1em;
 }
 
-header, .summary {
+.intro, footer {
+  max-width: 100%;
   background-color: $accent2;
   margin: 1em;
-  padding: 1em;
+  padding: 1.5em 0 1em 0;
   box-shadow: 2px 2px 10px $primary;
+}
+
+h1::before {
+  @include atoms.thumbtack();
+}
+
+footer a:first-of-type::before {
+  @include atoms.thumbtack();
+}
+
+@media only screen and (min-width: 34.7em) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  
+  .intro {
+    grid-column: 1 / span 7;
+  }
 }

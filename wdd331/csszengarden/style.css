@@ -25,21 +25,21 @@ h2 {
 h1 {
   font-weight: 900;
   /* Heavy */
-  font-size: 4em;
+  font-size: calc(100% + 5vmin);
 }
 
 h2 {
   color: #333;
   font-weight: normal;
   font-style: italic;
-  font-size: 3em;
+  font-size: calc(100% + 3vmin);
   letter-spacing: 1px;
   line-height: 1em;
   margin-bottom: 0;
 }
 
 h3 {
-  font-size: 2.25em;
+  font-size: calc(100% + 2vmin);
   font-weight: 200;
   /* Thin */
   letter-spacing: 1px;
@@ -79,19 +79,6 @@ img {
   max-width: 100%;
 }
 
-p:first-of-type::before {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: red;
-  margin: 0 auto;
-  position: relative;
-  top: -20px;
-  box-shadow: 2px 2px 5px #666666;
-}
-
 div.preamble {
   display: grid;
   grid-template-columns: 1fr;
@@ -112,6 +99,19 @@ div.preamble > p {
   animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
+}
+
+div.preamble p:first-of-type::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+  box-shadow: 2px 2px 5px #666666;
 }
 
 div.explanation {
@@ -136,6 +136,19 @@ div.explanation > p {
   animation-fill-mode: forwards;
 }
 
+div.explanation p:first-of-type::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+  box-shadow: 2px 2px 5px #666666;
+}
+
 div.participation {
   display: grid;
   grid-template-columns: 1fr;
@@ -156,6 +169,19 @@ div.participation > p {
   animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
+}
+
+div.participation p:first-of-type::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+  box-shadow: 2px 2px 5px #666666;
 }
 
 div.benefits {
@@ -180,6 +206,19 @@ div.benefits > p {
   animation-fill-mode: forwards;
 }
 
+div.benefits p:first-of-type::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+  box-shadow: 2px 2px 5px #666666;
+}
+
 div.requirements {
   display: grid;
   grid-template-columns: 1fr;
@@ -202,6 +241,19 @@ div.requirements > p {
   animation-fill-mode: forwards;
 }
 
+div.requirements p:first-of-type::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+  box-shadow: 2px 2px 5px #666666;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -222,11 +274,49 @@ body {
   padding: 1em;
 }
 
-header, .summary {
+.intro, footer {
+  max-width: 100%;
   background-color: #ffffff;
   margin: 1em;
-  padding: 1em;
+  padding: 1.5em 0 1em 0;
   box-shadow: 2px 2px 10px #666666;
+}
+
+h1::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+  box-shadow: 2px 2px 5px #666666;
+}
+
+footer a:first-of-type::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+  box-shadow: 2px 2px 5px #666666;
+}
+
+@media only screen and (min-width: 34.7em) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .intro {
+    grid-column: 1/span 7;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
