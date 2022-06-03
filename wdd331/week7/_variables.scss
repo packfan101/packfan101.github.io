@@ -1,0 +1,15 @@
+$quoteColor: hsl(201,50,80);
+$quoteColor2: hsl(255,34,55);
+
+@mixin color($color: --quoteColor, $qcolor: $quoteColor) {
+    border: 4px solid var($color);
+    &-image {
+        & img {
+            border: 4px solid var($color);
+            box-shadow: 8px 8px 0px 0px var($color);
+        }
+    }
+    &-quote::before {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20.458 20.544'%3E%3Cpath fill='#{$qcolor}' d='M11.37 20.544v-9.792c-.043-1.408.16-2.73.607-3.968a10.31 10.31 0 0 1 1.889-3.265 10.414 10.414 0 0 1 2.912-2.336 10.382 10.382 0 0 1 3.68-1.184v4.224c-1.622.556-2.731 1.376-3.328 2.464-.598 1.089-.896 2.423-.896 4h4.224v9.856H11.37zm-11.364 0v-9.792c-.043-1.408.16-2.73.608-3.968A10.311 10.311 0 0 1 2.502 3.52a10.414 10.414 0 0 1 2.912-2.336A10.369 10.369 0 0 1 9.094 0v4.224C7.472 4.779 6.363 5.6 5.766 6.688c-.598 1.089-.896 2.423-.896 4h4.224v9.856H.006z'/%3E%3C/svg%3E");
+    }
+}

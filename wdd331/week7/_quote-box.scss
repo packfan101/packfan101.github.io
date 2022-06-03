@@ -1,0 +1,60 @@
+@use "variables" as *;
+
+.quote1 {
+    @include color();
+}
+
+.quote2 {
+    @include color(--quoteColor2, $quoteColor2);
+}
+
+.quote3 {
+    @include color();
+}
+
+.quote-box {
+    display: flex;
+    border-radius: 20px;
+    width: clamp(var(--min-width), var(--preferred-width), var(--max-width));
+    margin: 2em auto;
+    padding: 1em;
+    gap: 1em;
+    &-quote {
+        position: relative;
+        &::before {
+            --graphic_size: 50px;
+            content: "";
+            height: var(--graphic_size);
+            width: var(--graphic_size);
+            position:absolute;
+            left: -55px;
+            top: 0;
+            filter: brightness(var(--brightness, 100%));
+        }
+        &-author {
+            text-align: right;
+        }
+        & p {
+            font-size: clamp(1rem, calc(1rem + 1vw), 5rem);
+        }
+        &-image {
+            @media (max-width: 50em) {
+                align-self: flex-end;
+            }
+            & img {
+                position: relative;
+                top: -80px;
+                @media (max-width: 50em) {
+                    box-shadow: none;
+                    width: 80px;
+                    height:80px;
+                    border-radius: 50%;
+                    top: 0; 
+                }
+            }
+        }
+    }
+}
+
+
+

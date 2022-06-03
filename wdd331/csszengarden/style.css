@@ -60,7 +60,7 @@ p {
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
-  padding: 0.5em 0;
+  padding: 0.5em 1em;
   margin: 0;
 }
 
@@ -85,7 +85,7 @@ div.preamble {
   background-color: #ffffff;
   border: solid 1px #000000;
   box-shadow: 2px 2px 10px #666666;
-  max-width: 400px;
+  max-width: 100%;
   padding: 1em;
   margin: 1em;
 }
@@ -120,7 +120,7 @@ div.explanation {
   background-color: #ffffff;
   border: solid 1px #000000;
   box-shadow: 2px 2px 10px #666666;
-  max-width: 400px;
+  max-width: 100%;
   padding: 1em;
   margin: 1em;
 }
@@ -155,7 +155,7 @@ div.participation {
   background-color: #ffffff;
   border: solid 1px #000000;
   box-shadow: 2px 2px 10px #666666;
-  max-width: 400px;
+  max-width: 100%;
   padding: 1em;
   margin: 1em;
 }
@@ -190,7 +190,7 @@ div.benefits {
   background-color: #ffffff;
   border: solid 1px #000000;
   box-shadow: 2px 2px 10px #666666;
-  max-width: 300px;
+  max-width: 100%;
   padding: 1em;
   margin: 1em;
 }
@@ -225,7 +225,7 @@ div.requirements {
   background-color: #ffffff;
   border: solid 1px #000000;
   box-shadow: 2px 2px 10px #666666;
-  max-width: 600px;
+  max-width: 100%;
   padding: 1em;
   margin: 1em;
 }
@@ -282,6 +282,15 @@ body {
   box-shadow: 2px 2px 10px #666666;
 }
 
+.summary {
+  text-align: center;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  padding: 1em;
+}
+
 h1::before {
   display: block;
   content: "";
@@ -295,7 +304,7 @@ h1::before {
   box-shadow: 2px 2px 5px #666666;
 }
 
-footer a:first-of-type::before {
+footer::before {
   display: block;
   content: "";
   width: 20px;
@@ -306,6 +315,8 @@ footer a:first-of-type::before {
   position: relative;
   top: -20px;
   box-shadow: 2px 2px 5px #666666;
+  flex-basis: 100%;
+  margin: 0 calc(50% - 10px);
 }
 
 @media only screen and (min-width: 34.7em) {
@@ -347,11 +358,16 @@ footer a:first-of-type::before {
   footer {
     grid-column: 1/span 7;
     grid-row: 5;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    z-index: 1;
   }
 
   .sidebar {
+    padding: 1em;
     grid-column: 7;
-    grid-row: 3;
+    grid-row: 3/span 2;
   }
 }
 

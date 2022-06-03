@@ -30,12 +30,22 @@ body {
   box-shadow: 2px 2px 10px $primary;
 }
 
+.summary {
+  text-align: center;
+}
+
+.wrapper {
+  background-color: $accent2;
+  padding: 1em;
+}
 h1::before {
   @include atoms.thumbtack();
 }
 
-footer a:first-of-type::before {
+footer::before {
   @include atoms.thumbtack();
+  flex-basis: 100%;
+  margin: 0 calc(50% - 10px);
 }
 
 @media only screen and (min-width: 34.7em) {
@@ -77,10 +87,15 @@ footer a:first-of-type::before {
   footer {
     grid-column: 1 / span 7;
     grid-row: 5;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    z-index: 1;
   }
 
   .sidebar {
+    padding: 1em;
     grid-column: 7;
-    grid-row: 3;
+    grid-row: 3 / span 2;
   }
 }

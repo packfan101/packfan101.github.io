@@ -1,0 +1,33 @@
+@use "quote-box";
+@use "variables" as *;
+
+
+:root {
+    --max-width: 95%;
+    --min-width: 200px;
+    --preferred-width: 60%;
+    --quoteColor: #{$quoteColor};
+    --quoteColor2:#{$quoteColor2};
+}
+
+body {
+    max-width: 3000px;
+    margin: 0 auto;
+}
+.container {
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.darktheme {
+    //--brightness: 500%;
+    background-color: #333;
+    color: white;
+}
+
+.blacktheme {
+    background-color: black;
+    color: white;
+}
+
