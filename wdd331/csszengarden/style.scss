@@ -60,6 +60,10 @@ aside .wrapper::before {
   grid-column: 1 / span 2;
 }
 
+ul:before {
+  @include atoms.thumbtack();
+}
+
 @media only screen and (min-width: 38.6em) {
   .page-wrapper {
     display: grid;
