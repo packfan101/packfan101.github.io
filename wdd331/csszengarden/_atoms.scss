@@ -36,19 +36,34 @@
   margin: 1em;
   transform:rotate($rotation);
   transition: 1.5s;
-  & p {
+  >p {
+    background-color: $accent3;
+    color: $accent3;
     margin: -.1em;
+    @include develop();
+    >a {
+      @include developa;
+    }
+  }
+  >a {
+    @include developa();
   }
   &:hover {
     transform: rotate(0deg);
     transform: scale(1.2);
     z-index: 1;
   }
-
 }
 
 @mixin develop() {
   animation-name: trans;
+  animation-duration: 5s;
+  animation-timing-function:ease-in;
+  animation-fill-mode:forwards;
+}
+
+@mixin developa() {
+  animation-name: transa;
   animation-duration: 5s;
   animation-timing-function:ease-in;
   animation-fill-mode:forwards;
@@ -77,8 +92,18 @@
   to{
     background-color: $primary;
     color: $accent2;
+    }
   }
-}
+  @keyframes transa {
+    from{
+      background-color: $accent3;
+      color: $accent3;
+    }
+    to{
+      background-color: $primary;
+      color: $accent1;
+      }
+    }
 
 // these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
 h1,
@@ -129,14 +154,23 @@ p {
 }
 
 a {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  @include set-font(.5vw, 1.5em);
   color: $text-dark;
   text-decoration: none;
 }
+li>a {
+  color: $accent1;
+}
+
 a:hover {
   color: $accent1;
-  border-color: $accent1;
+  font-weight: bold;
 }
 img {
   max-width: 100%;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }

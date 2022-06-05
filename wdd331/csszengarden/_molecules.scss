@@ -9,11 +9,6 @@ div.preamble {
   >h3 {
     grid-row: 4;
   }
-  >p {
-    background-color: $accent3;
-    color: $accent3;
-    @include atoms.develop();
-  }
 }
 div.preamble p:first-of-type::before {
   @include atoms.thumbtack();
@@ -22,11 +17,6 @@ div.explanation {
   @include atoms.card();
   >h3 {
     grid-row: 3;
-  }
-  >p {
-    background-color: $accent3;
-    color: $accent3;
-    @include atoms.develop();
   }
 }
 div.explanation p:first-of-type::before {
@@ -37,11 +27,7 @@ div.participation {
   >h3 {
     grid-row: 4;
   }
-  >p {
-    background-color: $accent3;
-    color: $accent3;
-    @include atoms.develop();
-  }
+  
 }
 div.participation p:first-of-type::before {
   @include atoms.thumbtack();
@@ -50,11 +36,6 @@ div.benefits {
   @include atoms.card(-2deg);
   >h3 {
     grid-row: 4;
-  }
-  >p {
-    background-color: $accent3;
-    color: $accent3;
-    @include atoms.develop();
   }
 }
 div.benefits p:first-of-type::before {
@@ -65,12 +46,15 @@ div.requirements {
   >h3 {
     grid-row: 6;
   }
-  >p {
-    background-color: $accent3;
-    color: $accent3;
-    @include atoms.develop();
-  }
 }
 div.requirements p:first-of-type::before {
   @include atoms.thumbtack();
+}
+ul {
+  @include atoms.card();
+  & li {
+    @include atoms.card();
+    @include atoms.develop();
+  }
+  
 }
