@@ -5,7 +5,7 @@
 
 
 div.preamble {
-  @include atoms.card();
+  @include atoms.card(-2deg);
   >h3 {
     grid-row: 4;
   }
@@ -47,7 +47,7 @@ div.participation p:first-of-type::before {
   @include atoms.thumbtack();
 }
 div.benefits {
-  @include atoms.card();
+  @include atoms.card(-2deg);
   >h3 {
     grid-row: 4;
   }
@@ -61,7 +61,7 @@ div.benefits p:first-of-type::before {
   @include atoms.thumbtack();
 }
 div.requirements {
-  @include atoms.card();
+  @include atoms.card(-2deg);
   >h3 {
     grid-row: 6;
   }

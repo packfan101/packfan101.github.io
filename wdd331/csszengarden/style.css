@@ -39,7 +39,9 @@ h2 {
 }
 
 h3 {
-  font-size: calc(100% + 2vmin);
+  font-family: "magneto", sans-serif;
+  font-size: clamp(1.1em, 0.5em + 2.1vw, 3em);
+  line-height: normal;
   font-weight: 200;
   /* Thin */
   letter-spacing: 1px;
@@ -58,7 +60,7 @@ h4 {
 
 p {
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-  font-size: 1em;
+  font-size: clamp(0.8em, 0.5em + 0.5vw, 3em);
   line-height: 1.5em;
   padding: 0.5em 1em;
   margin: 0;
@@ -85,9 +87,19 @@ div.preamble {
   background-color: #ffffff;
   border: solid 1px #000000;
   box-shadow: 2px 2px 10px #666666;
-  max-width: 100%;
+  max-width: 95%;
   padding: 1em;
   margin: 1em;
+  transform: rotate(-2deg);
+  transition: 1.5s;
+}
+div.preamble p {
+  margin: -0.1em;
+}
+div.preamble:hover {
+  transform: rotate(0deg);
+  transform: scale(1.2);
+  z-index: 1;
 }
 div.preamble > h3 {
   grid-row: 4;
@@ -120,9 +132,19 @@ div.explanation {
   background-color: #ffffff;
   border: solid 1px #000000;
   box-shadow: 2px 2px 10px #666666;
-  max-width: 100%;
+  max-width: 95%;
   padding: 1em;
   margin: 1em;
+  transform: rotate(2deg);
+  transition: 1.5s;
+}
+div.explanation p {
+  margin: -0.1em;
+}
+div.explanation:hover {
+  transform: rotate(0deg);
+  transform: scale(1.2);
+  z-index: 1;
 }
 div.explanation > h3 {
   grid-row: 3;
@@ -155,9 +177,19 @@ div.participation {
   background-color: #ffffff;
   border: solid 1px #000000;
   box-shadow: 2px 2px 10px #666666;
-  max-width: 100%;
+  max-width: 95%;
   padding: 1em;
   margin: 1em;
+  transform: rotate(2deg);
+  transition: 1.5s;
+}
+div.participation p {
+  margin: -0.1em;
+}
+div.participation:hover {
+  transform: rotate(0deg);
+  transform: scale(1.2);
+  z-index: 1;
 }
 div.participation > h3 {
   grid-row: 4;
@@ -190,9 +222,19 @@ div.benefits {
   background-color: #ffffff;
   border: solid 1px #000000;
   box-shadow: 2px 2px 10px #666666;
-  max-width: 100%;
+  max-width: 95%;
   padding: 1em;
   margin: 1em;
+  transform: rotate(-2deg);
+  transition: 1.5s;
+}
+div.benefits p {
+  margin: -0.1em;
+}
+div.benefits:hover {
+  transform: rotate(0deg);
+  transform: scale(1.2);
+  z-index: 1;
 }
 div.benefits > h3 {
   grid-row: 4;
@@ -225,9 +267,19 @@ div.requirements {
   background-color: #ffffff;
   border: solid 1px #000000;
   box-shadow: 2px 2px 10px #666666;
-  max-width: 100%;
+  max-width: 95%;
   padding: 1em;
   margin: 1em;
+  transform: rotate(-2deg);
+  transition: 1.5s;
+}
+div.requirements p {
+  margin: -0.1em;
+}
+div.requirements:hover {
+  transform: rotate(0deg);
+  transform: scale(1.2);
+  z-index: 1;
 }
 div.requirements > h3 {
   grid-row: 6;
@@ -266,7 +318,7 @@ html {
 }
 
 body {
-  max-width: 1100px;
+  max-width: 2100px;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 85%;
   color: #333;
@@ -284,6 +336,14 @@ body {
 
 .summary {
   text-align: center;
+  align-self: center;
+}
+.summary p:first-of-type {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: clamp(0.8em, 0.5em + 1.5vw, 3em);
+  line-height: normal;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .wrapper {
@@ -319,10 +379,37 @@ footer::before {
   margin: 0 calc(50% - 10px);
 }
 
+aside .select::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+  box-shadow: 2px 2px 5px #666666;
+}
+
 @media only screen and (min-width: 34.7em) {
-  .page-wrapper, .main {
+  .page-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  header {
+    grid-column: 1/span 2;
   }
 
   .intro {
@@ -331,8 +418,47 @@ footer::before {
   }
 
   .main {
-    grid-column: 1/span 7;
+    grid-column: 1/span 6;
     grid-row: 3;
+  }
+
+  .explanation {
+    grid-column: 1/span 3;
+    grid-row: 1/span 2;
+  }
+
+  .participation {
+    grid-column: 2/span 3;
+    grid-row: 3/span 2;
+  }
+
+  .benefits {
+    grid-column: 1/span 3;
+    grid-row: 5;
+  }
+
+  .requirements {
+    grid-column: 1/span 4;
+    grid-row: 6/span 2;
+  }
+
+  footer {
+    grid-column: 1/span 6;
+    grid-row: 8;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .sidebar {
+    padding: 1em;
+    grid-column: 7;
+    grid-row: 3/span 2;
+  }
+}
+@media only screen and (min-width: 53em) {
+  .main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
   .explanation {
@@ -356,18 +482,8 @@ footer::before {
   }
 
   footer {
-    grid-column: 1/span 7;
+    grid-column: 1/span 6;
     grid-row: 5;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    z-index: 1;
-  }
-
-  .sidebar {
-    padding: 1em;
-    grid-column: 7;
-    grid-row: 3/span 2;
   }
 }
 
