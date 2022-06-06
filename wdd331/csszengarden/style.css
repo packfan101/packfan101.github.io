@@ -147,15 +147,10 @@ div.preamble > h3 {
 
 div.preamble p:first-of-type::before {
   display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: red;
+  content: url(assets/thumbtack.svg);
   margin: 0 auto;
-  position: relative;
-  top: -20px;
-  box-shadow: 2px 2px 5px #666666;
+  zoom: 50%;
+  text-align: center;
 }
 
 div.explanation {
@@ -202,15 +197,10 @@ div.explanation > h3 {
 
 div.explanation p:first-of-type::before {
   display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: red;
+  content: url(assets/thumbtack.svg);
   margin: 0 auto;
-  position: relative;
-  top: -20px;
-  box-shadow: 2px 2px 5px #666666;
+  zoom: 50%;
+  text-align: center;
 }
 
 div.participation {
@@ -257,15 +247,10 @@ div.participation > h3 {
 
 div.participation p:first-of-type::before {
   display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: red;
+  content: url(assets/thumbtack.svg);
   margin: 0 auto;
-  position: relative;
-  top: -20px;
-  box-shadow: 2px 2px 5px #666666;
+  zoom: 50%;
+  text-align: center;
 }
 
 div.benefits {
@@ -312,15 +297,10 @@ div.benefits > h3 {
 
 div.benefits p:first-of-type::before {
   display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: red;
+  content: url(assets/thumbtack.svg);
   margin: 0 auto;
-  position: relative;
-  top: -20px;
-  box-shadow: 2px 2px 5px #666666;
+  zoom: 50%;
+  text-align: center;
 }
 
 div.requirements {
@@ -367,15 +347,10 @@ div.requirements > h3 {
 
 div.requirements p:first-of-type::before {
   display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: red;
+  content: url(assets/thumbtack.svg);
   margin: 0 auto;
-  position: relative;
-  top: -20px;
-  box-shadow: 2px 2px 5px #666666;
+  zoom: 50%;
+  text-align: center;
 }
 
 ul {
@@ -506,57 +481,37 @@ body {
 
 h1::before {
   display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: red;
+  content: url(assets/thumbtack.svg);
   margin: 0 auto;
-  position: relative;
-  top: -20px;
-  box-shadow: 2px 2px 5px #666666;
+  zoom: 50%;
+  text-align: center;
 }
 
 footer::before {
   display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: red;
+  content: url(assets/thumbtack.svg);
   margin: 0 auto;
-  position: relative;
-  top: -20px;
-  box-shadow: 2px 2px 5px #666666;
+  zoom: 50%;
+  text-align: center;
   flex-basis: 100%;
   margin: 0 calc(50% - 10px);
 }
 
 aside .wrapper::before {
   display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: red;
+  content: url(assets/thumbtack.svg);
   margin: 0 auto;
-  position: relative;
-  top: -20px;
-  box-shadow: 2px 2px 5px #666666;
+  zoom: 50%;
+  text-align: center;
   grid-column: 1/span 2;
 }
 
 ul:before {
   display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: red;
+  content: url(assets/thumbtack.svg);
   margin: 0 auto;
-  position: relative;
-  top: -20px;
-  box-shadow: 2px 2px 5px #666666;
+  zoom: 50%;
+  text-align: center;
 }
 
 @media only screen and (min-width: 38.6em) {

@@ -71,15 +71,17 @@
 
 @mixin thumbtack() {
     display: block;
-    content: "";
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: red;
+    content: url(assets/thumbtack.svg);
+    //width: 20px;
+    //height: 20px;
+    //border-radius: 50%;
+    //background-color: red;
     margin: 0 auto;
-    position:relative;
-    top: -20px;
-    box-shadow: 2px 2px 5px $primary;
+    //position:relative;
+    //top: -20px;
+    //box-shadow: 2px 2px 5px $primary;
+    zoom: 50%;
+    text-align: center;
   }
 
 
