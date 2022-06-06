@@ -50,7 +50,7 @@ h2 {
 
 h3 {
   font-family: "magneto", sans-serif;
-  font-size: clamp(1.1em, 0.5em + 2.1vw, 3em);
+  font-size: clamp(1em, 0.5em + 2.1vw, 2.8em);
   line-height: normal;
   font-weight: 200;
   /* Thin */
@@ -70,7 +70,7 @@ h4 {
 
 p {
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-  font-size: clamp(0.8em, 0.5em + 0.5vw, 3em);
+  font-size: clamp(0.8em, 0.5em + 0.4vw, 1.1em);
   line-height: 1.5em;
   padding: 0.5em 1em;
   margin: 0;
@@ -78,7 +78,7 @@ p {
 
 a {
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-  font-size: clamp(0.8em, 0.5em + 0.5vw, 3em);
+  font-size: clamp(0.8em, 0.5em + 0.4vw, 1.1em);
   line-height: 1.5em;
   color: #333;
   text-decoration: none;
@@ -104,12 +104,13 @@ footer {
 }
 
 div.preamble {
+  justify-self: center;
   display: grid;
   grid-template-columns: 1fr;
   background-color: #ffffff;
   border: solid 1px #000000;
   box-shadow: 2px 2px 10px #666666;
-  max-width: 95%;
+  max-width: 500px;
   padding: 1em;
   margin: 1em;
   transform: rotate(-2deg);
@@ -148,7 +149,10 @@ div.preamble > h3 {
 div.preamble p:first-of-type::before {
   display: block;
   content: url(assets/thumbtack.svg);
+  height: 20px;
   margin: 0 auto;
+  position: relative;
+  top: -50px;
   zoom: 50%;
   text-align: center;
 }
@@ -159,7 +163,7 @@ div.explanation {
   background-color: #ffffff;
   border: solid 1px #000000;
   box-shadow: 2px 2px 10px #666666;
-  max-width: 95%;
+  max-width: 400px;
   padding: 1em;
   margin: 1em;
   transform: rotate(2deg);
@@ -198,7 +202,10 @@ div.explanation > h3 {
 div.explanation p:first-of-type::before {
   display: block;
   content: url(assets/thumbtack.svg);
+  height: 20px;
   margin: 0 auto;
+  position: relative;
+  top: -50px;
   zoom: 50%;
   text-align: center;
 }
@@ -209,7 +216,7 @@ div.participation {
   background-color: #ffffff;
   border: solid 1px #000000;
   box-shadow: 2px 2px 10px #666666;
-  max-width: 95%;
+  max-width: 400px;
   padding: 1em;
   margin: 1em;
   transform: rotate(2deg);
@@ -248,7 +255,10 @@ div.participation > h3 {
 div.participation p:first-of-type::before {
   display: block;
   content: url(assets/thumbtack.svg);
+  height: 20px;
   margin: 0 auto;
+  position: relative;
+  top: -50px;
   zoom: 50%;
   text-align: center;
 }
@@ -259,7 +269,7 @@ div.benefits {
   background-color: #ffffff;
   border: solid 1px #000000;
   box-shadow: 2px 2px 10px #666666;
-  max-width: 95%;
+  max-width: 300px;
   padding: 1em;
   margin: 1em;
   transform: rotate(-2deg);
@@ -298,7 +308,10 @@ div.benefits > h3 {
 div.benefits p:first-of-type::before {
   display: block;
   content: url(assets/thumbtack.svg);
+  height: 20px;
   margin: 0 auto;
+  position: relative;
+  top: -50px;
   zoom: 50%;
   text-align: center;
 }
@@ -309,10 +322,10 @@ div.requirements {
   background-color: #ffffff;
   border: solid 1px #000000;
   box-shadow: 2px 2px 10px #666666;
-  max-width: 95%;
+  max-width: -2deg;
   padding: 1em;
   margin: 1em;
-  transform: rotate(-2deg);
+  transform: rotate(2deg);
   transition: 1.5s;
 }
 div.requirements > p {
@@ -348,7 +361,10 @@ div.requirements > h3 {
 div.requirements p:first-of-type::before {
   display: block;
   content: url(assets/thumbtack.svg);
+  height: 20px;
   margin: 0 auto;
+  position: relative;
+  top: -50px;
   zoom: 50%;
   text-align: center;
 }
@@ -359,7 +375,7 @@ ul {
   background-color: #ffffff;
   border: solid 1px #000000;
   box-shadow: 2px 2px 10px #666666;
-  max-width: 95%;
+  max-width: 400px;
   padding: 1em;
   margin: 1em;
   transform: rotate(2deg);
@@ -397,7 +413,7 @@ ul li {
   background-color: #ffffff;
   border: solid 1px #000000;
   box-shadow: 2px 2px 10px #666666;
-  max-width: 95%;
+  max-width: 400px;
   padding: 1em;
   margin: 1em;
   transform: rotate(2deg);
@@ -446,7 +462,7 @@ html {
 }
 
 body {
-  max-width: 2100px;
+  max-width: 3000px;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 85%;
   color: #333;
@@ -454,7 +470,15 @@ body {
   padding: 1em;
 }
 
-.intro, footer {
+.intro {
+  max-width: 1800px;
+  background-color: #ffffff;
+  margin: 1em auto;
+  padding: 1.5em 0 1em 0;
+  box-shadow: 2px 2px 10px #666666;
+}
+
+footer {
   max-width: 100%;
   background-color: #ffffff;
   margin: 1em;
@@ -463,13 +487,13 @@ body {
 }
 
 .summary {
+  max-width: 600px;
   text-align: center;
+  justify-self: center;
   align-self: center;
 }
 .summary p:first-of-type {
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-  font-size: clamp(0.8em, 0.5em + 1.5vw, 3em);
-  line-height: normal;
+  font-size: clamp(1.2em, 0.5em + 1vw, 2.8em);
   font-style: italic;
   font-weight: bold;
 }
@@ -482,7 +506,10 @@ body {
 h1::before {
   display: block;
   content: url(assets/thumbtack.svg);
+  height: 20px;
   margin: 0 auto;
+  position: relative;
+  top: -50px;
   zoom: 50%;
   text-align: center;
 }
@@ -490,7 +517,10 @@ h1::before {
 footer::before {
   display: block;
   content: url(assets/thumbtack.svg);
+  height: 20px;
   margin: 0 auto;
+  position: relative;
+  top: -50px;
   zoom: 50%;
   text-align: center;
   flex-basis: 100%;
@@ -500,7 +530,10 @@ footer::before {
 aside .wrapper::before {
   display: block;
   content: url(assets/thumbtack.svg);
+  height: 20px;
   margin: 0 auto;
+  position: relative;
+  top: -50px;
   zoom: 50%;
   text-align: center;
   grid-column: 1/span 2;
@@ -509,7 +542,10 @@ aside .wrapper::before {
 ul:before {
   display: block;
   content: url(assets/thumbtack.svg);
+  height: 20px;
   margin: 0 auto;
+  position: relative;
+  top: -50px;
   zoom: 50%;
   text-align: center;
 }
@@ -584,6 +620,48 @@ ul:before {
   .page-wrapper > .main > footer {
     grid-column: 1/span 6;
     grid-row: 5;
+  }
+  .page-wrapper > .sidebar > .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+  .page-wrapper > .sidebar > .wrapper > .design-selection {
+    grid-column: 1;
+    grid-row: 2/span 3;
+  }
+  .page-wrapper > .sidebar > .wrapper > .design-archives {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .page-wrapper > .sidebar > .wrapper > .zen-resources {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+@media only screen and (min-width: 146em) {
+  .page-wrapper > .main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .page-wrapper > .main > .explanation {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+  }
+  .page-wrapper > .main > .participation {
+    grid-column: 3/span 2;
+    grid-row: 1/span 2;
+  }
+  .page-wrapper > .main > .benefits {
+    grid-column: 5/span 2;
+    grid-row: 1;
+  }
+  .page-wrapper > .main > .requirements {
+    grid-column: 7/span 3;
+    grid-row: 1/span 3;
+  }
+  .page-wrapper > .main > footer {
+    grid-column: 1/span 9;
+    grid-row: 4;
   }
   .page-wrapper > .sidebar > .wrapper {
     display: grid;
