@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap");
+:root {
+  --ratio: 1.5;
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --font-color: #333;
+  /* set variation axis values */
+  --mono: "MONO" 0;
+  /* Monospace: Sans (natural-width) or Mono (fixed-width) */
+  --casl: "CASL" 0;
+  /* Casual: Linear to Casual */
+  --wght: 400;
+  /* Weight: Light to ExtraBlack; usually set with `font-weight` */
+  --slnt: 0deg;
+  /* Slant: 0 to -15 degrees, auto cursive at -14 */
+  --crsv: "CRSV" 0.5;
+  /* Cursive: always roman (0), auto substitution (.5), or always cursive (1) */
+}
+
+* {
+  font-weight: var(--wght);
+  font-style: oblique var(--slnt);
+  font-variation-settings: var(--mono), var(--casl), var(--crsv);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Recursive", monospace;
+}
+
+h2 {
+  font-size: var(--s2);
+}
+
+h3 {
+  font-size: var(--s1);
+}
+
+h2,
+h3 {
+  --wght: 600;
+  --mono: "MONO" 1;
+  margin-top: var(--s2);
+  margin-bottom: 0;
+}
+
+p {
+  line-height: var(--s1);
+  --casl: "CASL" 1;
+  hyphens: auto;
+  text-align: justify;
+}
+
+.alert {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 0.5em;
+}
+.alert > p {
+  border-left: 2px solid #999;
+  padding-left: 0.5em;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+  --casl: "CASL" 0;
+  --slnt: 15deg;
+}
+
+.bold {
+  --wght: 800;
+}
+
+.mono {
+  --mono: "MONO" 1;
+  --slnt: 0deg;
+  --casl: "CASL" 0;
+  letter-spacing: -1.5px;
+  font-size: smaller;
+}
+
+text {
+  font-size: 18.5;
+  fill: #fff;
+}
+
+ul {
+  padding-left: 15px;
+}
+ul > li {
+  list-style-image: url(assets/pointer.svg);
+  margin-top: var(--s1);
+  margin-bottom: var(--s1);
+  line-height: var(--s1);
+  --casl: "CASL" 1;
+  hyphens: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
