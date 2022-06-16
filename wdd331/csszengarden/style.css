@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/len5cji.css");
+
 @keyframes trans {
   from {
     background-color: #000000;
@@ -9,6 +10,7 @@
     color: #ffffff;
   }
 }
+
 @keyframes transa {
   from {
     background-color: #000000;
@@ -19,6 +21,7 @@
     color: #ff9341;
   }
 }
+
 h1,
 h3,
 h4 {
@@ -116,6 +119,7 @@ div.preamble {
   transform: rotate(-2deg);
   transition: 1.5s;
 }
+
 div.preamble > p {
   background-color: #000000;
   color: #000000;
@@ -125,23 +129,27 @@ div.preamble > p {
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 div.preamble > p > a {
   animation-name: transa;
   animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 div.preamble > a {
   animation-name: transa;
   animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 div.preamble:hover {
   transform: rotate(0deg);
   transform: scale(1.2);
   z-index: 1;
 }
+
 div.preamble > h3 {
   grid-row: 4;
 }
@@ -169,6 +177,7 @@ div.explanation {
   transform: rotate(2deg);
   transition: 1.5s;
 }
+
 div.explanation > p {
   background-color: #000000;
   color: #000000;
@@ -178,23 +187,27 @@ div.explanation > p {
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 div.explanation > p > a {
   animation-name: transa;
   animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 div.explanation > a {
   animation-name: transa;
   animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 div.explanation:hover {
   transform: rotate(0deg);
   transform: scale(1.2);
   z-index: 1;
 }
+
 div.explanation > h3 {
   grid-row: 3;
 }
@@ -222,6 +235,7 @@ div.participation {
   transform: rotate(2deg);
   transition: 1.5s;
 }
+
 div.participation > p {
   background-color: #000000;
   color: #000000;
@@ -231,23 +245,27 @@ div.participation > p {
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 div.participation > p > a {
   animation-name: transa;
   animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 div.participation > a {
   animation-name: transa;
   animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 div.participation:hover {
   transform: rotate(0deg);
   transform: scale(1.2);
   z-index: 1;
 }
+
 div.participation > h3 {
   grid-row: 4;
 }
@@ -275,6 +293,7 @@ div.benefits {
   transform: rotate(-2deg);
   transition: 1.5s;
 }
+
 div.benefits > p {
   background-color: #000000;
   color: #000000;
@@ -284,23 +303,27 @@ div.benefits > p {
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 div.benefits > p > a {
   animation-name: transa;
   animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 div.benefits > a {
   animation-name: transa;
   animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 div.benefits:hover {
   transform: rotate(0deg);
   transform: scale(1.2);
   z-index: 1;
 }
+
 div.benefits > h3 {
   grid-row: 4;
 }
@@ -328,6 +351,7 @@ div.requirements {
   transform: rotate(2deg);
   transition: 1.5s;
 }
+
 div.requirements > p {
   background-color: #000000;
   color: #000000;
@@ -337,23 +361,27 @@ div.requirements > p {
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 div.requirements > p > a {
   animation-name: transa;
   animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 div.requirements > a {
   animation-name: transa;
   animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 div.requirements:hover {
   transform: rotate(0deg);
   transform: scale(1.2);
   z-index: 1;
 }
+
 div.requirements > h3 {
   grid-row: 6;
 }
@@ -381,6 +409,7 @@ ul {
   transform: rotate(2deg);
   transition: 1.5s;
 }
+
 ul > p {
   background-color: #000000;
   color: #000000;
@@ -390,23 +419,27 @@ ul > p {
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 ul > p > a {
   animation-name: transa;
   animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 ul > a {
   animation-name: transa;
   animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 ul:hover {
   transform: rotate(0deg);
   transform: scale(1.2);
   z-index: 1;
 }
+
 ul li {
   display: grid;
   grid-template-columns: 1fr;
@@ -423,6 +456,7 @@ ul li {
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 ul li > p {
   background-color: #000000;
   color: #000000;
@@ -432,18 +466,21 @@ ul li > p {
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 ul li > p > a {
   animation-name: transa;
   animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 ul li > a {
   animation-name: transa;
   animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+
 ul li:hover {
   transform: rotate(0deg);
   transform: scale(1.2);
@@ -492,6 +529,7 @@ footer {
   justify-self: center;
   align-self: center;
 }
+
 .summary p:first-of-type {
   font-size: clamp(1.2em, 0.5em + 1vw, 2.8em);
   font-style: italic;
@@ -551,19 +589,23 @@ ul:before {
 }
 
 @media only screen and (min-width: 38.6em) {
+  
   .page-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
   }
+
   .page-wrapper > .intro {
     grid-column: 1/span 7;
     grid-row: 1/span 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   .page-wrapper > .intro > header {
     grid-column: 1/span 2;
   }
+
   .page-wrapper > .main {
     grid-column: 1/span 6;
     grid-row: 3;
@@ -571,111 +613,139 @@ ul:before {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 5em;
   }
+
   .page-wrapper > .main > .explanation {
     grid-column: 1/span 3;
     grid-row: 1/span 2;
   }
+
   .page-wrapper > .main > .participation {
     grid-column: 2/span 3;
     grid-row: 3/span 2;
   }
+
   .page-wrapper > .main > .benefits {
     grid-column: 1/span 3;
     grid-row: 5;
   }
+
   .page-wrapper > .main > .requirements {
     grid-column: 1/span 4;
     grid-row: 6/span 2;
   }
+
   .page-wrapper > .main > footer {
     grid-column: 1/span 6;
     grid-row: 8;
   }
+
   .page-wrapper > .sidebar {
     padding: 1em;
     grid-column: 7;
     grid-row: 3/span 2;
   }
 }
+
 @media only screen and (min-width: 81.25em) {
+
   .page-wrapper > .main {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
+
   .page-wrapper > .main > .explanation {
     grid-column: 1/span 3;
     grid-row: 1/span 2;
   }
+
   .page-wrapper > .main > .participation {
     grid-column: 4/span 3;
     grid-row: 1/span 2;
   }
+
   .page-wrapper > .main > .benefits {
     grid-column: 1/span 2;
     grid-row: 3;
   }
+
   .page-wrapper > .main > .requirements {
     grid-column: 3/span 4;
     grid-row: 3/span 2;
   }
+
   .page-wrapper > .main > footer {
     grid-column: 1/span 6;
     grid-row: 5;
   }
+
   .page-wrapper > .sidebar > .wrapper {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
   }
+
   .page-wrapper > .sidebar > .wrapper > .design-selection {
     grid-column: 1;
     grid-row: 2/span 3;
   }
+
   .page-wrapper > .sidebar > .wrapper > .design-archives {
     grid-column: 2;
     grid-row: 2;
   }
+
   .page-wrapper > .sidebar > .wrapper > .zen-resources {
     grid-column: 2;
     grid-row: 3;
   }
 }
+
 @media only screen and (min-width: 146em) {
+
   .page-wrapper > .main {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
+
   .page-wrapper > .main > .explanation {
     grid-column: 1/span 2;
     grid-row: 1/span 2;
   }
+
   .page-wrapper > .main > .participation {
     grid-column: 3/span 2;
     grid-row: 1/span 2;
   }
+
   .page-wrapper > .main > .benefits {
     grid-column: 5/span 2;
     grid-row: 1;
   }
+
   .page-wrapper > .main > .requirements {
     grid-column: 7/span 3;
     grid-row: 1/span 3;
   }
+
   .page-wrapper > .main > footer {
     grid-column: 1/span 9;
     grid-row: 4;
   }
+
   .page-wrapper > .sidebar > .wrapper {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
   }
+
   .page-wrapper > .sidebar > .wrapper > .design-selection {
     grid-column: 1;
     grid-row: 2/span 3;
   }
+
   .page-wrapper > .sidebar > .wrapper > .design-archives {
     grid-column: 2;
     grid-row: 2;
   }
+
   .page-wrapper > .sidebar > .wrapper > .zen-resources {
     grid-column: 2;
     grid-row: 3;

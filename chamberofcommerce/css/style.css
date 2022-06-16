@@ -1,19 +1,40 @@
 body {
-  font-size:16px;
+  font-size: 16px;
   max-width: 68.75rem;
   margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, a {
-  font-family: 'Shippori Mincho', serif;
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Shippori Mincho", serif;
 }
 
 div.weatheralert {
   background-color: darkred;
   color: white;
-  padding: .1em .5em .2em .5em;
+  padding: 0.1em 0.5em 0.2em;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+header img {
+  display: block;
+  width: 9.375em;
+  margin: auto;
+}
+
+.board img {
+  width: 160px;
+  border-radius: 100%;
 }
 
 .weatheralert div a img {
@@ -21,7 +42,19 @@ div.weatheralert {
   margin: 1em;
 }
 
-.alert li:nth-child(1){
+nav li {
+  display: none;
+  font-weight: 800;
+  height: 2em;
+  text-align: center;
+}
+
+.ham,
+.responsive li {
+  display: block;
+}
+
+.alert li:nth-child(1) {
   list-style-type: none;
   font-size: 1.3em;
 }
@@ -34,56 +67,78 @@ div.weatheralert {
   display: none;
 }
 
-header img {
-  display: block;
-  width: 9.375em;
-  margin: auto;
-}
-
 header {
   margin: 0 auto;
 }
 
 main {
-  padding: 0 .3em;
-}
-img {
-  max-width: 100%;
-  max-height: 100%;
+  padding: 0 0.3em;
 }
 
-h1, .cityevent h3, .centered {
+h1,
+.cityevent h3,
+.centered {
   text-align: center;
 }
 
 .calltoaction {
-  background-color: rgba(48,180,76,1);
+  background-color: rgba(48 180 76 / 100%);
   color: black;
-  border-radius: .5em;
-  padding: .5em;
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+
+nav a {
+  display: block;
+  padding: 0.4em 0;
+  color: white;
+  text-decoration: none;
+  width: 100%;
 }
 
 .herodiv a {
   text-decoration: none;
 }
 
-.about, .events, .featured, .contact, footer, .history, .demographics, .cityevents, form, .memberbenefits, .thanks, .businesses, .board, .map {
-  background-color: rgb(19,80,133);
-  color: white;
-  border-radius: .5em;
-  padding: .5em;
-  margin: .5em 0;
+nav a:hover,
+.eventlink {
+  color: rgb(0 0 0);
 }
 
-.featcomp, .cityevent, .buscard, .busurl {
+.about,
+.events,
+.featured,
+.contact,
+footer,
+.history,
+.demographics,
+.cityevents,
+form,
+.memberbenefits,
+.thanks,
+.businesses,
+.board,
+.map {
+  background-color: rgb(19 80 133);
+  color: white;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+
+.featcomp,
+.cityevent,
+.buscard,
+.busurl {
   color: black;
 }
 
-
-.contact, footer {
+.contact,
+footer {
   text-align: center;
   font-size: 1.1em;
 }
+
 .icon {
   width: 1em;
 }
@@ -97,82 +152,70 @@ h1, .cityevent h3, .centered {
 }
 
 /* Nav Section */
-/*#region*/
 
-.menuicon, .closeicon {
+/* #region */
+
+.menuicon,
+.closeicon {
   max-width: 1.6em;
 }
 
 .menu {
-  background-color:rgb(19,80,133);
+  background-color: rgb(19 80 133);
 }
 
 nav ul {
   display: block;
-
-  list-style-type:none;
+  list-style-type: none;
   margin: 0;
-  padding: 0; 
-  white-space: nowrap; 
-}
-
-nav li {
-  display: none;
-  font-weight: 800;
-  height: 2em;
-  text-align: center;
-}
-
-nav a {
-  display: block;
-  padding: 0.4em 0;
-  color: white;
-  text-decoration: none;
-  width: 100%;
-}
-
-nav a:hover, .eventlink {
-  color: rgb(0,0,0);
+  padding: 0;
+  white-space: nowrap;
 }
 
 .menu:hover {
-  background-color:rgb(48, 180, 76);
+  background-color: rgb(48 180 76);
 }
 
 li.active {
-  background-color:rgb(48,180,76);
+  background-color: rgb(48 180 76);
 }
 
 li.active a {
   color: black;
 }
 
-.ham, .responsive li {
-  display: block;
+.open,
+a .close {
+  display: inline-block;
 }
 
-.open, a .close {
-  display:inline-block;
-}
-
-.closeicon, .hide, .views {
+.closeicon,
+.hide,
+.views {
   display: none;
 }
 
-/*#endregion*/
+/* #endregion */
 
 /* Weather Info */
-/*#region*/
-aside, .featcomp, .forecastdiv, .cityevent, .buscard {
-  border:.1em solid black;
+
+/* #region */
+
+aside,
+.featcomp,
+.forecastdiv,
+.cityevent,
+.buscard {
+  border: 0.1em solid black;
   border-radius: 1em;
-  box-shadow: .2em .2em .8em .2em black;
-  background-color: rgb(48,180,76);
-  padding:.5em;
+  box-shadow: 0.2em 0.2em 0.8em 0.2em black;
+  background-color: rgb(48 180 76);
+  padding: 0.5em;
   margin: 1em;
 }
+
 .weathersummary {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
   white-space: nowrap;
@@ -180,10 +223,9 @@ aside, .featcomp, .forecastdiv, .cityevent, .buscard {
 
 .weathsumhead {
   grid-column: 1 / span 2;
-  margin-bottom: 0.2em;
-  border-bottom: .1em solid black;
+  margin: 0.5em 0.5em 0.2em;
+  border-bottom: 0.1em solid black;
   text-align: center;
-  margin: .5em;
 }
 
 .weathsumleft {
@@ -191,9 +233,9 @@ aside, .featcomp, .forecastdiv, .cityevent, .buscard {
   list-style: none;
   text-align: right;
   justify-self: end;
-  padding-left: .25em;
+  padding-left: 0.25em;
   margin-top: 0;
-  font-weight:900;
+  font-weight: 900;
 }
 
 .weathsumright {
@@ -201,10 +243,10 @@ aside, .featcomp, .forecastdiv, .cityevent, .buscard {
   list-style: none;
   text-align: left;
   justify-self: start;
-  padding-left: .25em;
+  padding-left: 0.25em;
   margin-top: 0;
   font-weight: 900;
-  color:rgba(255, 210, 63, .9);
+  color: rgba(255 210 63 / 90%);
 }
 
 .forecast {
@@ -218,17 +260,20 @@ aside, .featcomp, .forecastdiv, .cityevent, .buscard {
   padding: 0;
   margin: 0.5em;
   width: 5em;
-  border:black .1em solid;
+  border: black 0.1em solid;
 }
 
 .forecasthead {
   width: 100%;
   text-align: center;
 }
-/*#endregion*/
+
+/* #endregion */
 
 /* City Page */
-/*#region*/
+
+/* #region */
+
 .history {
   min-height: 23em;
 }
@@ -237,16 +282,19 @@ aside, .featcomp, .forecastdiv, .cityevent, .buscard {
   grid-column: 1 / span 2;
 }
 
-.demographics h3, .demographics h4 {
+.demographics h3,
+.demographics h4 {
   margin: 0;
-  
 }
 
 .demographics ul {
   margin-top: 0;
 }
 
-.demographics p, .demographics h3, .demographics h4, .demographics ul {
+.demographics p,
+.demographics h3,
+.demographics h4,
+.demographics ul {
   grid-column: 2;
 }
 
@@ -255,30 +303,38 @@ aside, .featcomp, .forecastdiv, .cityevent, .buscard {
   max-width: 100%;
   margin: 0 auto;
 }
-/*#endregion*/
+
+/* #endregion */
 
 /* JOIN PAGE */
-/*#region*/
 
-form fieldset, .memberbenefits fieldset, .board fieldset {
+/* #region */
+
+form fieldset,
+.memberbenefits fieldset,
+.board fieldset {
   margin: 2em 0;
 }
 
 fieldset legend {
   font-size: 1.2em;
-  font-family: 'Shippori Mincho', Georgia, serif;
+  font-family: "Shippori Mincho", Georgia, serif;
 }
 
-.custInfo, .busInfo, .radio, .contactInfo {
+.cust-info,
+.bus-info,
+.radio,
+.contact-info {
   display: flex;
   flex-direction: column;
 }
 
 label {
-  padding: 1em 0 1em 0;
+  padding: 1em 0;
 }
 
-input.custinput, textarea {
+input.custinput,
+textarea {
   max-width: 92%;
 }
 
@@ -287,10 +343,11 @@ input.custinput, textarea {
 }
 
 div.radio {
-  padding: 1.2em 0 1em 0;
+  padding: 1.2em 0 1em;
 }
 
-.custinput, #submitBtn {
+.custinput,
+#submit-btn {
   height: 50px;
 }
 
@@ -298,13 +355,15 @@ select.custinput {
   height: 60px;
 }
 
-.custinput, #submitBtn, textarea {
+.custinput,
+#submit-btn,
+textarea {
   border: 5px solid gray;
-  border-radius: .8em;
+  border-radius: 0.8em;
 }
 
-#submitBtn {
-  background-color: rgb(48, 180, 76);
+#submit-btn {
+  background-color: rgb(48 180 76);
   color: black;
   width: 100%;
 }
@@ -320,10 +379,10 @@ select.custinput {
 .bold {
   font-weight: bold;
   font-size: 1.1em;
-  margin-bottom:.5em;
+  margin-bottom: 0.5em;
 }
-/*#endregion*/
 
+/* #endregion */
 
 .logo {
   max-width: 200px;
@@ -341,15 +400,11 @@ select.custinput {
   text-align: center;
 }
 
-.board img {
-  width: 160px;
-  border-radius: 100%;
-}
-
 .map {
   text-align: center;
   height: 250px;
 }
+
 .map iframe {
   width: 100%;
   height: 100%;
