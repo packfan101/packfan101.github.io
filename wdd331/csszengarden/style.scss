@@ -24,16 +24,8 @@ body {
 
 .intro {
   max-width: 1800px;
-  background-color: $accent2;
+  background-image: url(assets/lens.webp);
   margin: 1em auto;
-  padding: 1.5em 0 1em 0;
-  box-shadow: 2px 2px 10px $primary;
-}
-
-footer {
-  max-width: 100%;
-  background-color: $accent2;
-  margin: 1em;
   padding: 1.5em 0 1em 0;
   box-shadow: 2px 2px 10px $primary;
 }
@@ -42,7 +34,8 @@ footer {
   max-width: 600px;
   text-align: center;
   justify-self: center;
-  align-self: center;
+  align-self: end;
+  width: 90%;
   
   & p:first-of-type {
     font-size: clamp(1.2em, .5em + 1vw, 2.8em);
