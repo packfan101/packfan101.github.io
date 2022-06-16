@@ -78,15 +78,10 @@
 @mixin thumbtack() {
     display: block;
     content: url(assets/thumbtack.svg);
-    //width: 20px;
     height: 20px;
-    //border-radius: 50%;
-    //background-color: red;
     margin: 0 auto;
     position:relative;
     top: -50px;
-    //box-shadow: 2px 2px 5px $primary;
-    //SSzoom: 50%;
     text-align: center;
   }
 
@@ -114,6 +109,14 @@
     }
 
 // these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
+
+header {
+  //background-color: $primary;
+  //max-width: 800px;
+  //border-radius: 50%;
+  //justify-self: center;
+}
+
 h1,
 h3,
 h4 {
@@ -129,7 +132,7 @@ h2 {
 
 h1 {
   font-weight: 900; /* Heavy */
-  font-size: calc(100% + 5vmin);
+  font-size: calc(100% + 2vw);
 }
 h2 {
   color: $text-light;
