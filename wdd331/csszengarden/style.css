@@ -35,14 +35,14 @@ h2 {
 h1 {
   font-weight: 900;
   /* Heavy */
-  font-size: calc(100% + 2.5vw);
+  font-size: clamp(1.2em, 100% + 2.5vw, 4em);
 }
 
 h2 {
   color: #fff;
   font-weight: normal;
   font-style: italic;
-  font-size: calc(100% + 1.5vw);
+  font-size: clamp(1em, 100% + 1.5vw, 3em);
   letter-spacing: 1px;
   line-height: 1em;
   margin: 0;
@@ -86,6 +86,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  text-align: center;
+}
+
 li > a {
   color: #ff9341;
 }
@@ -103,12 +107,42 @@ footer {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  background-color: #666666;
-  border: solid 12px #ffffff;
+  background: rgb(128, 0, 128);
+  background: linear-gradient(24deg, rgb(128, 0, 128) 37%, rgb(0, 0, 255) 91%);
   max-width: 100%;
   margin: 1em;
   padding: 1.5em 0 1em 0;
   box-shadow: 2px 2px 10px #666666;
+}
+footer a {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: clamp(0.8em, 0.5em + 0.8vw, 1.1em);
+  line-height: 2em;
+  background-color: #666666;
+  padding: 1em;
+  margin: 1em;
+  border: 5px solid #ffffff;
+  border-bottom: 10px solid #ffffff;
+  width: 100px;
+  text-align: center;
+}
+footer :nth-child(odd) {
+  transform: rotate(2deg);
+  transition: 1.5s;
+}
+footer :nth-child(odd):hover {
+  transform: rotate(0deg);
+  transform: scale(1.2);
+  z-index: 1;
+}
+footer :nth-child(even) {
+  transform: rotate(-2deg);
+  transition: 1.5s;
+}
+footer :nth-child(even):hover {
+  transform: rotate(0deg);
+  transform: scale(1.2);
+  z-index: 1;
 }
 
 div.preamble {
@@ -162,6 +196,7 @@ div.preamble p:first-of-type::before {
   position: relative;
   top: -50px;
   text-align: center;
+  zoom: 50%;
 }
 
 div.explanation {
@@ -214,6 +249,7 @@ div.explanation p:first-of-type::before {
   position: relative;
   top: -50px;
   text-align: center;
+  zoom: 50%;
 }
 
 div.participation {
@@ -266,6 +302,7 @@ div.participation p:first-of-type::before {
   position: relative;
   top: -50px;
   text-align: center;
+  zoom: 50%;
 }
 
 div.benefits {
@@ -318,6 +355,7 @@ div.benefits p:first-of-type::before {
   position: relative;
   top: -50px;
   text-align: center;
+  zoom: 50%;
 }
 
 div.requirements {
@@ -370,6 +408,7 @@ div.requirements p:first-of-type::before {
   position: relative;
   top: -50px;
   text-align: center;
+  zoom: 50%;
 }
 
 ul {
@@ -459,13 +498,13 @@ ul li:hover {
 
 html {
   background-image: url("assets/background.jpg");
-  background-size: 100%;
-  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
   padding: 5%;
 }
 
 body {
-  max-width: 3000px;
+  max-width: 2000px;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 85%;
   color: #333;
@@ -483,21 +522,32 @@ body {
 }
 
 .summary {
+  background-color: #666666;
   max-width: 600px;
   text-align: center;
   justify-self: center;
   align-self: end;
   width: 90%;
+  border-style: inset;
+  border-radius: 20px;
+  margin: 1em auto;
+}
+.summary p {
+  background: none;
 }
 .summary p:first-of-type {
-  font-size: clamp(1.2em, 0.5em + 1vw, 2.8em);
+  font-size: clamp(1.2em, 0.5em + 1vw, 2em);
   font-style: italic;
   font-weight: bold;
 }
 
 .wrapper {
-  background-color: #ffffff;
+  background: rgb(128, 0, 128);
+  background: linear-gradient(30deg, rgb(128, 0, 128) 25%, rgb(0, 0, 255) 90%);
   padding: 1em;
+}
+.wrapper h3 {
+  color: #ffffff;
 }
 
 h1::before {
@@ -508,6 +558,7 @@ h1::before {
   position: relative;
   top: -50px;
   text-align: center;
+  zoom: 50%;
 }
 
 footer::before {
@@ -518,6 +569,7 @@ footer::before {
   position: relative;
   top: -50px;
   text-align: center;
+  zoom: 50%;
   flex-basis: 100%;
   margin: 0 calc(50% - 10px);
 }
@@ -530,6 +582,7 @@ aside .wrapper::before {
   position: relative;
   top: -50px;
   text-align: center;
+  zoom: 50%;
   grid-column: 1/span 2;
 }
 
@@ -541,6 +594,7 @@ ul:before {
   position: relative;
   top: -50px;
   text-align: center;
+  zoom: 50%;
 }
 
 @media only screen and (min-width: 38.6em) {
@@ -613,48 +667,6 @@ ul:before {
   .page-wrapper > .main > footer {
     grid-column: 1/span 6;
     grid-row: 5;
-  }
-  .page-wrapper > .sidebar > .wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1em;
-  }
-  .page-wrapper > .sidebar > .wrapper > .design-selection {
-    grid-column: 1;
-    grid-row: 2/span 3;
-  }
-  .page-wrapper > .sidebar > .wrapper > .design-archives {
-    grid-column: 2;
-    grid-row: 2;
-  }
-  .page-wrapper > .sidebar > .wrapper > .zen-resources {
-    grid-column: 2;
-    grid-row: 3;
-  }
-}
-@media only screen and (min-width: 146em) {
-  .page-wrapper > .main {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-  .page-wrapper > .main > .explanation {
-    grid-column: 1/span 2;
-    grid-row: 1/span 2;
-  }
-  .page-wrapper > .main > .participation {
-    grid-column: 3/span 2;
-    grid-row: 1/span 2;
-  }
-  .page-wrapper > .main > .benefits {
-    grid-column: 5/span 2;
-    grid-row: 1;
-  }
-  .page-wrapper > .main > .requirements {
-    grid-column: 7/span 3;
-    grid-row: 1/span 3;
-  }
-  .page-wrapper > .main > footer {
-    grid-column: 1/span 9;
-    grid-row: 4;
   }
   .page-wrapper > .sidebar > .wrapper {
     display: grid;
