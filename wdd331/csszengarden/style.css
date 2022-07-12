@@ -191,13 +191,16 @@ div.preamble > h3 {
 
 div.preamble p:first-of-type::before {
   display: block;
-  content: url(assets/thumbtack.svg);
-  height: 20px;
-  margin: 0 auto;
+  content: "";
+  background-image: url(assets/thumbtack.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
+  height: 50px;
+  margin-bottom: -30px;
   position: relative;
-  top: -50px;
+  top: -25px;
   text-align: center;
-  zoom: 50%;
 }
 
 div.explanation {
@@ -244,13 +247,16 @@ div.explanation > h3 {
 
 div.explanation p:first-of-type::before {
   display: block;
-  content: url(assets/thumbtack.svg);
-  height: 20px;
-  margin: 0 auto;
+  content: "";
+  background-image: url(assets/thumbtack.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
+  height: 50px;
+  margin-bottom: -30px;
   position: relative;
-  top: -50px;
+  top: -25px;
   text-align: center;
-  zoom: 50%;
 }
 
 div.participation {
@@ -297,13 +303,16 @@ div.participation > h3 {
 
 div.participation p:first-of-type::before {
   display: block;
-  content: url(assets/thumbtack.svg);
-  height: 20px;
-  margin: 0 auto;
+  content: "";
+  background-image: url(assets/thumbtack.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
+  height: 50px;
+  margin-bottom: -30px;
   position: relative;
-  top: -50px;
+  top: -25px;
   text-align: center;
-  zoom: 50%;
 }
 
 div.benefits {
@@ -350,13 +359,16 @@ div.benefits > h3 {
 
 div.benefits p:first-of-type::before {
   display: block;
-  content: url(assets/thumbtack.svg);
-  height: 20px;
-  margin: 0 auto;
+  content: "";
+  background-image: url(assets/thumbtack.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
+  height: 50px;
+  margin-bottom: -30px;
   position: relative;
-  top: -50px;
+  top: -25px;
   text-align: center;
-  zoom: 50%;
 }
 
 div.requirements {
@@ -403,13 +415,16 @@ div.requirements > h3 {
 
 div.requirements p:first-of-type::before {
   display: block;
-  content: url(assets/thumbtack.svg);
-  height: 20px;
-  margin: 0 auto;
+  content: "";
+  background-image: url(assets/thumbtack.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
+  height: 50px;
+  margin-bottom: -30px;
   position: relative;
-  top: -50px;
+  top: -25px;
   text-align: center;
-  zoom: 50%;
 }
 
 ul {
@@ -555,49 +570,60 @@ body {
 
 h1::before {
   display: block;
-  content: url(assets/thumbtack.svg);
-  height: 20px;
-  margin: 0 auto;
+  content: "";
+  background-image: url(assets/thumbtack.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
+  height: 50px;
+  margin-bottom: -30px;
   position: relative;
-  top: -50px;
+  top: -25px;
   text-align: center;
-  zoom: 50%;
 }
 
 footer::before {
   display: block;
-  content: url(assets/thumbtack.svg);
-  height: 20px;
-  margin: 0 auto;
+  content: "";
+  background-image: url(assets/thumbtack.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
+  height: 50px;
+  margin-bottom: -30px;
   position: relative;
-  top: -50px;
+  top: -25px;
   text-align: center;
-  zoom: 50%;
   flex-basis: 100%;
-  margin: 0 calc(50% - 10px);
 }
 
 aside .wrapper::before {
   display: block;
-  content: url(assets/thumbtack.svg);
-  height: 20px;
-  margin: 0 auto;
+  content: "";
+  background-image: url(assets/thumbtack.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
+  height: 50px;
+  margin-bottom: -30px;
   position: relative;
-  top: -50px;
+  top: -25px;
   text-align: center;
-  zoom: 50%;
   grid-column: 1/span 2;
 }
 
 ul:before {
   display: block;
-  content: url(assets/thumbtack.svg);
-  height: 20px;
-  margin: 0 auto;
+  content: "";
+  background-image: url(assets/thumbtack.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
+  height: 50px;
+  margin-bottom: -30px;
   position: relative;
-  top: -50px;
+  top: -25px;
   text-align: center;
-  zoom: 50%;
 }
 
 @media only screen and (min-width: 38.6em) {

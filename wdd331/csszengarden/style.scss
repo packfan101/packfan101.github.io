@@ -71,7 +71,6 @@ h1::before {
 footer::before {
   @include atoms.thumbtack();
   flex-basis: 100%;
-  margin: 0 calc(50% - 10px);
 }
 
 aside .wrapper::before {

@@ -77,13 +77,16 @@
 
 @mixin thumbtack() {
     display: block;
-    content: url(assets/thumbtack.svg);
-    height: 20px;
-    margin: 0 auto;
+    content: "";
+    background-image: url(assets/thumbtack.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+    height: 50px;
+    margin-bottom: -30px;
     position:relative;
-    top: -50px;
+    top: -25px;
     text-align: center;
-    zoom: 50%;
   }
 
 
