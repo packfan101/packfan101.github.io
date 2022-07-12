@@ -56,7 +56,9 @@ body {
 
 .wrapper {
   background: rgb(128,0,128);
-  background: linear-gradient(30deg, rgba(128,0,128,1) 25%, rgba(0,0,255,1) 90%); 
+  background: linear-gradient(30deg, rgba(128,0,128,1) 25%, rgba(0,0,255,1) 90%);
+  border: 1px solid black;
+  box-shadow: 2px 2px 10px $primary;
   padding: 1em;
   & h3 {
     color: $accent2;

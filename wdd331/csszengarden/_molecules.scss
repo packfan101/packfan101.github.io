@@ -43,7 +43,7 @@ div.benefits p:first-of-type::before {
   @include atoms.thumbtack();
 }
 div.requirements {
-  @include atoms.card(-2deg);
+  @include atoms.card(600px, -2deg);
   >h3 {
     grid-row: 6;
   }

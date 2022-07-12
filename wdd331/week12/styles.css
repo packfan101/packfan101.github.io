@@ -1,0 +1,38 @@
+
+
+.row-grid {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 auto;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+
+.col-grid {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    height:2500px;
+    align-content: flex-start;
+}
+
+.card {
+    flex: 1 auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    font-weight: 100;
+    font-size: medium;
+}
+

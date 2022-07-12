@@ -185,11 +185,9 @@ footer {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  //background-image: url(assets/lens.webp);
-  //background-position: center;
-  //background-size:cover;
   background: rgb(128,0,128);
-  background: linear-gradient(24deg, rgba(128,0,128,1) 37%, rgba(0,0,255,1) 91%); 
+  background: linear-gradient(24deg, rgba(128,0,128,1) 37%, rgba(0,0,255,1) 91%);
+  border: 1px solid black;
   max-width: 100%;
   margin: 1em;
   padding: 1.5em 0 1em 0;
@@ -200,7 +198,7 @@ footer {
     padding: 1em;
     margin: 1em;
     border: 5px solid $accent2;
-    border-bottom: 10px solid $accent2;
+    border-bottom: 15px solid $accent2;
     width: 100px;
     text-align: center;
   }
