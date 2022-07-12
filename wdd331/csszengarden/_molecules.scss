@@ -1,9 +1,6 @@
 @use 'variables' as *;
 @use 'atoms';
 
-
-
-
 div.preamble {
   justify-self: center;
   @include atoms.card(500px, -2deg);
@@ -11,51 +8,100 @@ div.preamble {
     grid-row: 4;
   }
 }
+
 div.preamble p:first-of-type::before {
   @include atoms.thumbtack();
 }
+
 div.explanation {
   @include atoms.card();
   >h3 {
     grid-row: 3;
   }
 }
+
 div.explanation p:first-of-type::before {
   @include atoms.thumbtack();
-}  
+}
+
 div.participation {
   @include atoms.card();
   >h3 {
     grid-row: 4;
-  }
-  
+  }  
 }
+
 div.participation p:first-of-type::before {
   @include atoms.thumbtack();
 }
+
 div.benefits {
   @include atoms.card(300px, -2deg);
   >h3 {
     grid-row: 4;
   }
 }
+
 div.benefits p:first-of-type::before {
   @include atoms.thumbtack();
 }
+
 div.requirements {
   @include atoms.card(600px, -2deg);
   >h3 {
     grid-row: 6;
   }
 }
+
 div.requirements p:first-of-type::before {
   @include atoms.thumbtack();
 }
+
 ul {
   @include atoms.card();
   & li {
     @include atoms.card();
     @include atoms.develop();
+  }  
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background: rgb(128,0,128);
+  background: linear-gradient(24deg, rgba(128,0,128,1) 37%, rgba(0,0,255,1) 91%);
+  border: 1px solid black;
+  max-width: 100%;
+  margin: 1em;
+  padding: 1.5em 0 1em 0;
+  box-shadow: 2px 2px 10px $primary;
+  & a {
+    @include set-font(.8vw, 2em);
+    background-color: $primary;
+    padding: 1em;
+    margin: 1em;
+    border: 5px solid $accent2;
+    border-bottom: 15px solid $accent2;
+    width: 100px;
+    text-align: center;
   }
-  
+  & :nth-child(odd) {
+    transform: rotate(2deg);
+    transition: 1.5s;
+    &:hover {
+      transform: rotate(0deg);
+      transform: scale(1.2);
+      z-index: 1;
+    }
+  }
+  & :nth-child(even) {
+    transform: rotate(-2deg);
+    transition: 1.5s;
+    &:hover {
+      transform: rotate(0deg);
+      transform: scale(1.2);
+      z-index: 1;
+    }
+  }
 }
